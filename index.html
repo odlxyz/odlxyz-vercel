@@ -431,20 +431,22 @@ var branches={
 const app=document.getElementById('app');
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
 function closeMenu(){document.getElementById('mainMenu')?.classList.remove('open')}
-function shell(inner){app.innerHTML='<section id="view"><div class="wrap"><main class="mainbox"><button class="back" onclick="history.back()">← Retour</button>'+inner+'</main></div></section>';scrollTo({top:0,behavior:'smooth'});}
-function home(){
-closeMenu();
-app.innerHTML=`<section class="hero"><div class="wrap hero-inner"><span class="eyebrow">Soutien Maths • Bac & Tronc Commun</span><h1>Maîtrise<em>les maths</em></h1><p>Cours, exercices corrigés, devoirs et examens pour progresser en TCS, 1BAC et 2BAC.</p><div class="actions"><a class="btn" onclick="route('Cours')">Explorer les cours →</a><a class="btn alt" onclick="route('Exercices corrigés')">Exercices corrigés</a></div></div></section>
-<section class="section reveal odl-essential-motion"><div class="wrap odl-essential-front">
-<div class="section-head"><div><h2>Ressources essentielles</h2><p>Tout ce qu'il faut pour travailler efficacement.</p></div></div>
-<div class="resources">
-<a class="resource odl-shopify-card odl-delay-1" onclick="route('Cours')"><b>01 — Cours</b><span>Leçons structurées et méthodes.</span></a>
-<a class="resource odl-shopify-card odl-delay-2" onclick="route('Exercices corrigés')"><b>02 — Exercices</b><span>Entraînement avec solutions détaillées.</span></a>
-<a class="resource odl-shopify-card odl-delay-3" onclick="route('Devoirs')"><b>03 — Devoirs</b><span>Contrôles et devoirs corrigés.</span></a>
-<a class="resource odl-shopify-card odl-delay-4" onclick="route('Examens')"><b>04 — Examens</b><span>Préparation au baccalauréat.</span></a>
-</div></div></section>`;
-history.replaceState({route:'home'},'',location.pathname); setTimeout(()=>{initAnimations();initLevelCards()},0);
-scrollTo({top:0,behavior:'smooth'});
+function shell(inner){
+  app.innerHTML=
+    '<section id="view">'+
+      '<div class="wrap">'+
+        '<main class="mainbox">'+
+          '<div class="odl-back-wrap">'+
+            '<button class="odl-back-btn" type="button" onclick="history.back()">'+
+              '<span class="odl-back-arrow">←</span> Retour'+
+            '</button>'+
+          '</div>'+
+          inner+
+        '</main>'+
+      '</div>'+
+    '</section>';
+
+  scrollTo({top:0,behavior:'smooth'});
 }
 function go(label){history.pushState({route:label},'', '?odl='+encodeURIComponent(label));route(label,false)}
 function branchCard(kicker,name,label){return `<a class="odl-branch" onclick="go('${label.replace(/'/g,"\\'")}')"><small>${kicker}</small><h2>${name}</h2><span class="odl-branch-arrow">→</span></a>`}
