@@ -1,892 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>ODLXYZ — Soutien Maths Bac & Tronc Commun</title>
-
-<meta name="description"
-content="Cours de mathématiques, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC au Maroc.">
-
+<title>ODLXYZ — Soutien Maths</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 <style>
-:root{
- --ink:#111318;
- --muted:#737986;
- --paper:#f3f1ec;
- --card:#fff;
- --line:rgba(17,19,24,.10);
- --accent:#1f5eff;
- --shadow:0 18px 55px rgba(17,19,24,.10);
-}
-
-*{box-sizing:border-box}
-
-html{scroll-behavior:smooth}
-
-body{
- margin:0;
- background:var(--paper);
- color:var(--ink);
- font-family:Inter,Arial,sans-serif;
- line-height:1.65;
-}
-
-a{
- color:inherit;
- text-decoration:none;
-}
-
-.wrap{
- width:min(1320px,96%);
- margin:auto;
-}
-
-/* HEADER */
-
-.header{
- position:fixed;
- top:18px;
- left:0;
- right:0;
- z-index:50;
-}
-
-.nav{
- min-height:62px;
- padding:8px 18px 8px 12px;
- background:rgba(255,255,255,.91);
- border:1px solid rgba(255,255,255,.75);
- border-radius:22px;
- display:flex;
- align-items:center;
- justify-content:space-between;
- gap:24px;
- box-shadow:0 12px 35px rgba(0,0,0,.08);
- backdrop-filter:blur(16px);
-}
-
-.brand{
- display:flex;
- align-items:center;
- gap:10px;
- font-weight:900;
- font-size:20px;
-}
-
-.mark{
- width:42px;
- height:42px;
- border-radius:11px;
- background:#0c0d10;
- color:#fff;
- display:grid;
- place-items:center;
-}
-
-.menu{
- display:flex;
- align-items:center;
- gap:12px;
- flex-wrap:wrap;
-}
-
-.menu button{
- border:0;
- background:transparent;
- padding:10px 9px;
- font-family:inherit;
- font-size:13px;
- font-weight:800;
- letter-spacing:1.2px;
- text-transform:uppercase;
- color:#686e7b;
- cursor:pointer;
-}
-
-.menu button:hover{
- color:#111;
-}
-
-.mobile{
- display:none;
- border:0;
- background:#f0f1f3;
- border-radius:10px;
- padding:9px 11px;
- font-size:18px;
-}
-
-/* HERO */
-
-.hero{
- min-height:100vh;
- padding:130px 0 42px;
- display:flex;
- align-items:center;
- position:relative;
- overflow:hidden;
- background:
- linear-gradient(115deg,rgba(16,18,23,.80),rgba(16,18,23,.52)),
- radial-gradient(circle at 82% 18%,rgba(255,255,255,.18),transparent 24%),
- linear-gradient(135deg,#777d87,#b8b8b5);
-}
-
-.hero:before{
- content:"∫   π   √x   Σ   f(x)";
- position:absolute;
- right:-2%;
- top:19%;
- font-family:Georgia,serif;
- font-size:clamp(70px,10vw,150px);
- font-style:italic;
- color:rgba(255,255,255,.06);
- transform:rotate(-7deg);
- white-space:nowrap;
-}
-
-.hero-inner{
- position:relative;
- z-index:2;
- color:#fff;
-}
-
-.eyebrow{
- display:inline-flex;
- border:1px solid rgba(255,255,255,.28);
- border-radius:999px;
- padding:7px 17px;
- font-size:11px;
- font-weight:700;
- letter-spacing:4px;
- text-transform:uppercase;
-}
-
-.hero h1{
- margin:28px 0 18px;
- font-size:clamp(64px,10vw,142px);
- line-height:.78;
- letter-spacing:-7px;
- font-weight:900;
- text-transform:uppercase;
- max-width:980px;
-}
-
-.hero h1 em{
- display:block;
- font-family:Georgia,serif;
- font-size:.72em;
- font-weight:400;
- text-transform:none;
- letter-spacing:-4px;
- margin-left:11%;
- margin-top:18px;
-}
-
-.hero p{
- max-width:760px;
- color:rgba(255,255,255,.80);
- font-size:clamp(16px,1.5vw,21px);
-}
-
-.actions{
- display:flex;
- gap:18px;
- flex-wrap:wrap;
- margin-top:30px;
-}
-
-.btn{
- display:inline-flex;
- padding:13px 18px;
- border-radius:999px;
- background:#fff;
- color:#111;
- font-size:14px;
- font-weight:900;
- text-transform:uppercase;
- cursor:pointer;
- border:0;
-}
-
-.btn.alt{
- background:rgba(255,255,255,.11);
- color:#fff;
- border:1px solid rgba(255,255,255,.16);
-}
-
-/* SECTIONS */
-
-.section{
- padding:72px 0;
-}
-
-.section h2{
- font-size:clamp(32px,4vw,54px);
- line-height:1;
- letter-spacing:-2px;
- margin:0;
-}
-
-.section-head{
- margin-bottom:28px;
-}
-
-.section-head p{
- color:var(--muted);
-}
-
-/* RESOURCES */
-
-.resources{
- display:grid;
- grid-template-columns:repeat(4,1fr);
- gap:15px;
-}
-
-.resource{
- background:#17191e;
- color:#fff;
- border-radius:22px;
- padding:24px;
- min-height:150px;
- cursor:pointer;
- transition:.3s;
-}
-
-.resource:hover{
- transform:translateY(-6px);
-}
-
-.resource b{
- display:block;
- font-size:18px;
- margin-bottom:8px;
-}
-
-.resource span{
- font-size:14px;
- color:#aeb3bd;
-}
-
-/* LEVELS */
-
-.levels{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:18px;
-}
-
-.level{
- min-height:300px;
- background:#fff;
- border:1px solid var(--line);
- border-radius:26px;
- padding:28px;
- box-shadow:var(--shadow);
- cursor:pointer;
- transition:.35s;
-}
-
-.level:hover{
- transform:translateY(-8px);
-}
-
-.badge{
- display:inline-block;
- border:1px solid var(--line);
- padding:6px 11px;
- border-radius:999px;
- font-size:11px;
- font-weight:900;
- letter-spacing:2px;
-}
-
-.level h3{
- font-size:28px;
- margin:52px 0 12px;
-}
-
-.level p{
- color:var(--muted);
-}
-
-/* ARTICLES */
-
-#content{
- padding:110px 0 70px;
- min-height:80vh;
-}
-
-.page-title{
- font-size:clamp(38px,5vw,68px);
- letter-spacing:-3px;
- margin:0 0 35px;
-}
-
-.posts{
- display:grid;
- gap:18px;
-}
-
-.post{
- background:#fff;
- border:1px solid var(--line);
- border-radius:22px;
- padding:26px;
- box-shadow:0 10px 30px rgba(17,19,24,.06);
-}
-
-.post h2{
- margin:0 0 12px;
- font-size:27px;
- line-height:1.2;
-}
-
-.post p{
- color:#626873;
-}
-
-.read{
- display:inline-flex;
- margin-top:10px;
- color:#1748c9;
- font-weight:800;
-}
-
-.back{
- display:inline-flex;
- margin-bottom:25px;
- padding:10px 16px;
- background:#fff;
- border:1px solid var(--line);
- border-radius:999px;
- font-weight:800;
- cursor:pointer;
-}
-
-/* FOOTER */
-
-.footer-shell{
- padding:18px 0 28px;
-}
-
-.footer{
- width:min(1320px,96%);
- margin:auto;
- background:#111318;
- color:#c5c8d0;
- padding:44px 38px 22px;
- border-radius:30px;
-}
-
-.footer h3{
- color:#fff;
-}
-
-.footer-grid{
- display:grid;
- grid-template-columns:2fr 1fr 1fr;
- gap:30px;
-}
-
-.footer button{
- display:block;
- border:0;
- background:none;
- color:#c5c8d0;
- padding:5px 0;
- cursor:pointer;
- font:inherit;
-}
-
-.copy{
- border-top:1px solid rgba(255,255,255,.1);
- margin-top:30px;
- padding-top:18px;
- font-size:13px;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
- .header{top:10px}
-
- .mobile{display:block}
-
- .menu{
-  display:none;
-  position:absolute;
-  top:72px;
-  left:3%;
-  right:3%;
-  background:#fff;
-  border-radius:18px;
-  padding:12px;
-  box-shadow:var(--shadow);
- }
-
- .menu.open{
-  display:grid;
- }
-
- .hero h1{
-  letter-spacing:-4px;
- }
-
- .levels{
-  grid-template-columns:1fr;
- }
-
- .resources{
-  grid-template-columns:1fr 1fr;
- }
-
- .footer-grid{
-  grid-template-columns:1fr;
- }
-}
-
-@media(max-width:560px){
-
- .hero h1{
-  font-size:58px;
- }
-
- .resources{
-  grid-template-columns:1fr;
- }
-
- .footer{
-  width:94%;
-  padding:30px 22px;
- }
-}
-
+:root{--ink:#111318;--muted:#737986;--paper:#f3f1ec;--card:#fff;--line:rgba(17,19,24,.10);--accent:#1f5eff;--shadow:0 18px 55px rgba(17,19,24,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1320px,94%);margin:auto}
+.header{position:fixed;top:18px;left:0;right:0;z-index:50}.nav{min-height:62px;padding:8px 18px 8px 12px;background:rgba(255,255,255,.93);border-radius:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 12px 35px rgba(0,0,0,.08);backdrop-filter:blur(16px)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;cursor:pointer}.mark{width:42px;height:42px;border-radius:11px;background:#0c0d10;color:#fff;display:grid;place-items:center}.menu{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.menu a{padding:10px 8px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#686e7b;cursor:pointer}.mobile{display:none;border:0;background:#f0f1f3;border-radius:10px;padding:9px 11px;font-size:18px}
+.hero{min-height:92vh;padding:130px 0 50px;display:flex;align-items:center;color:#fff;background:linear-gradient(115deg,rgba(16,18,23,.80),rgba(16,18,23,.52)),linear-gradient(135deg,#777d87,#b8b8b5);position:relative;overflow:hidden}.hero:before{content:'∫   π   √x   Σ   f(x)';position:absolute;right:-2%;top:19%;font-family:Georgia,serif;font-size:clamp(70px,10vw,150px);font-style:italic;color:rgba(255,255,255,.06);transform:rotate(-7deg);white-space:nowrap}.hero-inner{position:relative;z-index:2}.eyebrow{display:inline-flex;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 17px;font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase}.hero h1{margin:28px 0 18px;font-size:clamp(64px,10vw,142px);line-height:.78;letter-spacing:-7px;font-weight:900;text-transform:uppercase}.hero h1 em{display:block;font-family:Georgia,serif;font-size:.72em;font-weight:400;text-transform:none;letter-spacing:-4px;margin-left:11%;margin-top:18px}.hero p{max-width:760px;color:rgba(255,255,255,.8);font-size:clamp(16px,1.5vw,21px)}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;padding:13px 18px;border-radius:999px;background:#fff;color:#111;font-weight:900;text-transform:uppercase;cursor:pointer}.btn.alt{background:rgba(255,255,255,.11);color:#fff;border:1px solid rgba(255,255,255,.16)}
+.section{padding:72px 0}.section h2{font-size:clamp(32px,4vw,54px);line-height:1;letter-spacing:-2px;margin:0 0 12px}.resources{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:28px}.resource{background:#17191e;color:#fff;border-radius:22px;padding:24px;min-height:150px;cursor:pointer;transition:.3s}.resource:hover{transform:translateY(-6px)}.resource b{display:block;font-size:18px;margin-bottom:8px}.resource span{font-size:14px;color:#aeb3bd}
+#view{padding:120px 0 70px;min-height:75vh}.mainbox{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+.odl-choice-head{margin-bottom:26px}.odl-choice-head h1{font-size:clamp(34px,5vw,58px);line-height:1;margin:0 0 10px;letter-spacing:-2px}.odl-choice-head p{color:var(--muted);margin:0}.odl-branches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.odl-branches.three{grid-template-columns:repeat(3,minmax(0,1fr))}.odl-branch{background:#f8f8f7;border:1px solid var(--line);border-radius:24px;padding:28px;min-height:180px;position:relative;cursor:pointer;transition:.3s}.odl-branch:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.odl-branch small{font-weight:900;letter-spacing:2px;color:var(--muted)}.odl-branch h2{font-size:28px;margin:28px 0 0}.odl-branch-arrow{position:absolute;right:24px;bottom:20px;font-size:28px;font-weight:700}
+.odl-chapter-list{position:relative;padding-left:28px}.odl-chapter-list:before{content:'';position:absolute;left:17px;top:30px;bottom:30px;width:2px;background:#e4e4e4}.odl-chapter{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:0 0 18px;box-shadow:0 8px 22px rgba(17,19,24,.06)}.odl-num{position:absolute;left:-48px;top:16px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#d93025;color:#fff;font-size:18px;font-weight:900}.odl-chapter h2{font-size:25px;line-height:1.2;margin:0 0 12px;color:#2c4057}.odl-resource-links{display:grid;gap:8px}.odl-resource-links a{color:#1677e8;font-weight:800;cursor:pointer}.odl-folder{width:17px;height:13px;border-radius:2px;background:#1677e8;display:inline-block;margin-right:9px}
+.back{display:inline-flex;margin-bottom:22px;padding:10px 16px;border:1px solid #dfe5ee;border-radius:999px;background:#fff;font-weight:800;cursor:pointer}
+.odl-post-card{padding:0 0 28px;margin:0 0 28px;border-bottom:1px solid var(--line)}.odl-post-card h2{font-size:28px;line-height:1.2;margin:0 0 10px}.odl-meta{font-size:13px;color:var(--muted);margin-bottom:14px}.odl-snippet{color:#555}.odl-read{display:inline-flex;margin-top:14px;font-weight:800;color:#1748c9;cursor:pointer}.odl-full-body{font-size:17px;line-height:1.8;color:#333}.odl-full-body img{max-width:100%;height:auto;border-radius:16px}.odl-full-body iframe{max-width:100%}
+.footer-shell{padding:18px 0 28px}.footer{width:min(1320px,94%);margin:auto;background:#111318;color:#c5c8d0;padding:44px 38px 22px;border-radius:30px}.footer h3{color:#fff}.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:18px;font-size:13px}
+@media(max-width:900px){.mobile{display:block}.menu{display:none;position:absolute;top:72px;left:3%;right:3%;background:#fff;border-radius:18px;padding:12px;box-shadow:var(--shadow)}.menu.open{display:grid}.resources{grid-template-columns:1fr 1fr}.odl-branches,.odl-branches.three{grid-template-columns:1fr}.hero h1{letter-spacing:-4px}}
+@media(max-width:560px){.resources{grid-template-columns:1fr}.hero h1{font-size:58px}.mainbox{padding:20px}.odl-chapter-list{padding-left:22px}.odl-num{left:-39px;width:38px;height:38px;font-size:15px}}
 </style>
 </head>
-
 <body>
+<header class="header"><div class="wrap nav">
+<div class="brand" onclick="home()"><span class="mark">∑</span><span>Odlaxy</span></div>
+<button class="mobile" onclick="document.getElementById('mainMenu').classList.toggle('open')">☰</button>
+<nav class="menu" id="mainMenu">
+<a onclick="home()">Accueil</a><a onclick="route('TCS')">TCS</a><a onclick="route('1BAC')">1BAC</a><a onclick="route('2BAC')">2BAC</a>
+<a onclick="route('Exercices corrigés')">Exercices corrigés</a><a onclick="route('Devoirs')">Devoirs</a><a onclick="route('Examens')">Examens</a>
+</nav></div></header>
 
-<header class="header">
- <div class="wrap nav">
+<div id="app"></div>
 
-  <div class="brand" onclick="home()" style="cursor:pointer">
-   <span class="mark">∑</span>
-   <span>Odlaxy</span>
-  </div>
-
-  <button class="mobile"
-  onclick="document.getElementById('mainMenu').classList.toggle('open')">
-  ☰
-  </button>
-
-  <nav class="menu" id="mainMenu">
-
-   <button onclick="home()">Accueil</button>
-
-   <button onclick="loadLabel('TCS')">TCS</button>
-
-   <button onclick="loadLabel('1BAC')">1BAC</button>
-
-   <button onclick="loadLabel('2BAC')">2BAC</button>
-
-   <button onclick="loadLabel('Exercices corrigés')">
-   Exercices corrigés
-   </button>
-
-   <button onclick="loadLabel('Devoirs')">
-   Devoirs
-   </button>
-
-   <button onclick="loadLabel('Examens')">
-   Examens
-   </button>
-
-  </nav>
-
- </div>
-</header>
-
-<div id="app">
-
-<section class="hero">
-
- <div class="wrap hero-inner">
-
-  <span class="eyebrow">
-  Soutien Maths • Bac & Tronc Commun
-  </span>
-
-  <h1>
-   Maîtrise
-   <em>les maths</em>
-  </h1>
-
-  <p>
-   Cours, exercices corrigés, devoirs et examens
-   pour progresser en TCS, 1BAC et 2BAC.
-   Des explications claires pour comprendre,
-   s'entraîner et réussir.
-  </p>
-
-  <div class="actions">
-
-   <button class="btn" onclick="loadLabel('Cours')">
-    Explorer les cours →
-   </button>
-
-   <button class="btn alt"
-   onclick="loadLabel('Exercices corrigés')">
-    Exercices corrigés
-   </button>
-
-  </div>
-
- </div>
-
-</section>
-
-<section class="section">
-
- <div class="wrap">
-
-  <div class="section-head">
-
-   <h2>Ressources essentielles</h2>
-
-   <p>Tout ce qu'il faut pour travailler efficacement.</p>
-
-  </div>
-
-  <div class="resources">
-
-   <div class="resource" onclick="loadLabel('Cours')">
-    <b>Cours</b>
-    <span>Leçons structurées et méthodes.</span>
-   </div>
-
-   <div class="resource"
-   onclick="loadLabel('Exercices corrigés')">
-    <b>Exercices</b>
-    <span>Entraînement avec solutions détaillées.</span>
-   </div>
-
-   <div class="resource" onclick="loadLabel('Devoirs')">
-    <b>Devoirs</b>
-    <span>Contrôles et devoirs corrigés.</span>
-   </div>
-
-   <div class="resource" onclick="loadLabel('Examens')">
-    <b>Examens</b>
-    <span>Préparation au baccalauréat.</span>
-   </div>
-
-  </div>
-
- </div>
-
-</section>
-
-<section class="section">
-
- <div class="wrap">
-
-  <div class="section-head">
-
-   <h2>Choisis ton niveau</h2>
-
-   <p>Cours et ressources organisés par niveau.</p>
-
-  </div>
-
-  <div class="levels">
-
-   <div class="level" onclick="loadLabel('TCS')">
-    <span class="badge">TCS</span>
-    <h3>Tronc Commun</h3>
-    <p>Sciences et Lettres.</p>
-   </div>
-
-   <div class="level" onclick="loadLabel('1BAC')">
-    <span class="badge">1BAC</span>
-    <h3>Première Bac</h3>
-    <p>Sciences, SMA et Lettres.</p>
-   </div>
-
-   <div class="level" onclick="loadLabel('2BAC')">
-    <span class="badge">2BAC</span>
-    <h3>Deuxième Bac</h3>
-    <p>PC, SVT, SMA et Lettres.</p>
-   </div>
-
-  </div>
-
- </div>
-
-</section>
-
-</div>
-
-<footer class="footer-shell">
-
- <div class="footer">
-
-  <div class="footer-grid">
-
-   <div>
-    <h3>∑ ODLXYZ</h3>
-    <p>
-     Soutien en mathématiques pour TCS,
-     1BAC et 2BAC.
-    </p>
-   </div>
-
-   <div>
-    <h3>Niveaux</h3>
-    <button onclick="loadLabel('TCS')">TCS</button>
-    <button onclick="loadLabel('1BAC')">1BAC</button>
-    <button onclick="loadLabel('2BAC')">2BAC</button>
-   </div>
-
-   <div>
-    <h3>Ressources</h3>
-    <button onclick="loadLabel('Cours')">Cours</button>
-    <button onclick="loadLabel('Devoirs')">Devoirs</button>
-    <button onclick="loadLabel('Examens')">Examens</button>
-   </div>
-
-  </div>
-
-  <div class="copy">
-   © 2026 ODLXYZ — Tous droits réservés.
-  </div>
-
- </div>
-
-</footer>
+<footer class="footer-shell"><div class="footer"><h3>∑ ODLXYZ</h3><p>Soutien en mathématiques pour TCS, 1BAC et 2BAC.</p><div class="copy">© 2026 ODLXYZ — Tous droits réservés.</div></div></footer>
 
 <script>
+const BLOG='https://odlxyz.blogspot.com';
+var branches={
+      'TCS':[{name:'Sciences',label:'TCS-Sciences'},{name:'Lettres',label:'TCS-Lettres'}],
+      '1BAC':[{name:'Sciences',label:'1BAC-Sciences'},{name:'SMA',label:'1BAC-SMA'},{name:'Lettres',label:'1BAC-Lettres'}],
+      '2BAC':[{name:'PC & SVT',label:'2BAC-PC-SVT'},{name:'SMA',label:'2BAC-SMA'},{name:'Lettres',label:'2BAC-Lettres'}]
+    };
+    var chapters={
+      'TCS-Sciences':[
+        {title:'Les ensembles de nombres N, Z, Q, D et R',base:'TCS-Sciences-C01'},
+        {title:'Arithmétique dans IN',base:'TCS-Sciences-C02'},
+        {title:'Calcul vectoriel dans le plan',base:'TCS-Sciences-C03'},
+        {title:'Chapitre 04',base:'TCS-Sciences-C04'},
+        {title:'Chapitre 05',base:'TCS-Sciences-C05'},
+        {title:'Chapitre 06',base:'TCS-Sciences-C06'},
+        {title:'Chapitre 07',base:'TCS-Sciences-C07'},
+        {title:'Chapitre 08',base:'TCS-Sciences-C08'},
+        {title:'Chapitre 09',base:'TCS-Sciences-C09'},
+        {title:'Chapitre 10',base:'TCS-Sciences-C10'},
+        {title:'Chapitre 11',base:'TCS-Sciences-C11'},
+        {title:'Chapitre 12',base:'TCS-Sciences-C12'},
+        {title:'Chapitre 13',base:'TCS-Sciences-C13'},
+        {title:'Chapitre 14',base:'TCS-Sciences-C14'},
+        {title:'Chapitre 15',base:'TCS-Sciences-C15'},
+        {title:'Chapitre 16',base:'TCS-Sciences-C16'},
+        {title:'Chapitre 17',base:'TCS-Sciences-C17'},
+        {title:'Chapitre 18',base:'TCS-Sciences-C18'},
+        {title:'Chapitre 19',base:'TCS-Sciences-C19'},
+        {title:'Chapitre 20',base:'TCS-Sciences-C20'},
+        {title:'Chapitre 21',base:'TCS-Sciences-C21'}
+      ],
+      'TCS-Lettres':[
+        {title:'Chapitre 01',base:'TCS-Lettres-C01'},
+        {title:'Chapitre 02',base:'TCS-Lettres-C02'},
+        {title:'Chapitre 03',base:'TCS-Lettres-C03'},
+        {title:'Chapitre 04',base:'TCS-Lettres-C04'},
+        {title:'Chapitre 05',base:'TCS-Lettres-C05'},
+        {title:'Chapitre 06',base:'TCS-Lettres-C06'},
+        {title:'Chapitre 07',base:'TCS-Lettres-C07'},
+        {title:'Chapitre 08',base:'TCS-Lettres-C08'},
+        {title:'Chapitre 09',base:'TCS-Lettres-C09'},
+        {title:'Chapitre 10',base:'TCS-Lettres-C10'},
+        {title:'Chapitre 11',base:'TCS-Lettres-C11'},
+        {title:'Chapitre 12',base:'TCS-Lettres-C12'},
+        {title:'Chapitre 13',base:'TCS-Lettres-C13'},
+        {title:'Chapitre 14',base:'TCS-Lettres-C14'},
+        {title:'Chapitre 15',base:'TCS-Lettres-C15'},
+        {title:'Chapitre 16',base:'TCS-Lettres-C16'},
+        {title:'Chapitre 17',base:'TCS-Lettres-C17'},
+        {title:'Chapitre 18',base:'TCS-Lettres-C18'},
+        {title:'Chapitre 19',base:'TCS-Lettres-C19'},
+        {title:'Chapitre 20',base:'TCS-Lettres-C20'},
+        {title:'Chapitre 21',base:'TCS-Lettres-C21'}
+      ],
+      '1BAC-Sciences':[
+        {title:'Chapitre 01',base:'1BAC-Sciences-C01'},
+        {title:'Chapitre 02',base:'1BAC-Sciences-C02'},
+        {title:'Chapitre 03',base:'1BAC-Sciences-C03'},
+        {title:'Chapitre 04',base:'1BAC-Sciences-C04'},
+        {title:'Chapitre 05',base:'1BAC-Sciences-C05'},
+        {title:'Chapitre 06',base:'1BAC-Sciences-C06'},
+        {title:'Chapitre 07',base:'1BAC-Sciences-C07'},
+        {title:'Chapitre 08',base:'1BAC-Sciences-C08'},
+        {title:'Chapitre 09',base:'1BAC-Sciences-C09'},
+        {title:'Chapitre 10',base:'1BAC-Sciences-C10'},
+        {title:'Chapitre 11',base:'1BAC-Sciences-C11'},
+        {title:'Chapitre 12',base:'1BAC-Sciences-C12'},
+        {title:'Chapitre 13',base:'1BAC-Sciences-C13'},
+        {title:'Chapitre 14',base:'1BAC-Sciences-C14'},
+        {title:'Chapitre 15',base:'1BAC-Sciences-C15'},
+        {title:'Chapitre 16',base:'1BAC-Sciences-C16'},
+        {title:'Chapitre 17',base:'1BAC-Sciences-C17'},
+        {title:'Chapitre 18',base:'1BAC-Sciences-C18'},
+        {title:'Chapitre 19',base:'1BAC-Sciences-C19'},
+        {title:'Chapitre 20',base:'1BAC-Sciences-C20'},
+        {title:'Chapitre 21',base:'1BAC-Sciences-C21'}
+      ],
+      '1BAC-SMA':[
+        {title:'Chapitre 01',base:'1BAC-SMA-C01'},
+        {title:'Chapitre 02',base:'1BAC-SMA-C02'},
+        {title:'Chapitre 03',base:'1BAC-SMA-C03'},
+        {title:'Chapitre 04',base:'1BAC-SMA-C04'},
+        {title:'Chapitre 05',base:'1BAC-SMA-C05'},
+        {title:'Chapitre 06',base:'1BAC-SMA-C06'},
+        {title:'Chapitre 07',base:'1BAC-SMA-C07'},
+        {title:'Chapitre 08',base:'1BAC-SMA-C08'},
+        {title:'Chapitre 09',base:'1BAC-SMA-C09'},
+        {title:'Chapitre 10',base:'1BAC-SMA-C10'},
+        {title:'Chapitre 11',base:'1BAC-SMA-C11'},
+        {title:'Chapitre 12',base:'1BAC-SMA-C12'},
+        {title:'Chapitre 13',base:'1BAC-SMA-C13'},
+        {title:'Chapitre 14',base:'1BAC-SMA-C14'},
+        {title:'Chapitre 15',base:'1BAC-SMA-C15'},
+        {title:'Chapitre 16',base:'1BAC-SMA-C16'},
+        {title:'Chapitre 17',base:'1BAC-SMA-C17'},
+        {title:'Chapitre 18',base:'1BAC-SMA-C18'},
+        {title:'Chapitre 19',base:'1BAC-SMA-C19'},
+        {title:'Chapitre 20',base:'1BAC-SMA-C20'},
+        {title:'Chapitre 21',base:'1BAC-SMA-C21'}
+      ],
+      '1BAC-Lettres':[
+        {title:'Chapitre 01',base:'1BAC-Lettres-C01'},
+        {title:'Chapitre 02',base:'1BAC-Lettres-C02'},
+        {title:'Chapitre 03',base:'1BAC-Lettres-C03'},
+        {title:'Chapitre 04',base:'1BAC-Lettres-C04'},
+        {title:'Chapitre 05',base:'1BAC-Lettres-C05'},
+        {title:'Chapitre 06',base:'1BAC-Lettres-C06'},
+        {title:'Chapitre 07',base:'1BAC-Lettres-C07'},
+        {title:'Chapitre 08',base:'1BAC-Lettres-C08'},
+        {title:'Chapitre 09',base:'1BAC-Lettres-C09'},
+        {title:'Chapitre 10',base:'1BAC-Lettres-C10'},
+        {title:'Chapitre 11',base:'1BAC-Lettres-C11'},
+        {title:'Chapitre 12',base:'1BAC-Lettres-C12'},
+        {title:'Chapitre 13',base:'1BAC-Lettres-C13'},
+        {title:'Chapitre 14',base:'1BAC-Lettres-C14'},
+        {title:'Chapitre 15',base:'1BAC-Lettres-C15'},
+        {title:'Chapitre 16',base:'1BAC-Lettres-C16'},
+        {title:'Chapitre 17',base:'1BAC-Lettres-C17'},
+        {title:'Chapitre 18',base:'1BAC-Lettres-C18'},
+        {title:'Chapitre 19',base:'1BAC-Lettres-C19'},
+        {title:'Chapitre 20',base:'1BAC-Lettres-C20'},
+        {title:'Chapitre 21',base:'1BAC-Lettres-C21'}
+      ],
+      '2BAC-PC-SVT':[
+        {title:'Chapitre 01',base:'2BAC-PC-SVT-C01'},
+        {title:'Chapitre 02',base:'2BAC-PC-SVT-C02'},
+        {title:'Chapitre 03',base:'2BAC-PC-SVT-C03'},
+        {title:'Chapitre 04',base:'2BAC-PC-SVT-C04'},
+        {title:'Chapitre 05',base:'2BAC-PC-SVT-C05'},
+        {title:'Chapitre 06',base:'2BAC-PC-SVT-C06'},
+        {title:'Chapitre 07',base:'2BAC-PC-SVT-C07'},
+        {title:'Chapitre 08',base:'2BAC-PC-SVT-C08'},
+        {title:'Chapitre 09',base:'2BAC-PC-SVT-C09'},
+        {title:'Chapitre 10',base:'2BAC-PC-SVT-C10'},
+        {title:'Chapitre 11',base:'2BAC-PC-SVT-C11'},
+        {title:'Chapitre 12',base:'2BAC-PC-SVT-C12'},
+        {title:'Chapitre 13',base:'2BAC-PC-SVT-C13'},
+        {title:'Chapitre 14',base:'2BAC-PC-SVT-C14'},
+        {title:'Chapitre 15',base:'2BAC-PC-SVT-C15'},
+        {title:'Chapitre 16',base:'2BAC-PC-SVT-C16'},
+        {title:'Chapitre 17',base:'2BAC-PC-SVT-C17'},
+        {title:'Chapitre 18',base:'2BAC-PC-SVT-C18'},
+        {title:'Chapitre 19',base:'2BAC-PC-SVT-C19'},
+        {title:'Chapitre 20',base:'2BAC-PC-SVT-C20'},
+        {title:'Chapitre 21',base:'2BAC-PC-SVT-C21'}
+      ],
+      '2BAC-SMA':[
+        {title:'Chapitre 01',base:'2BAC-SMA-C01'},
+        {title:'Chapitre 02',base:'2BAC-SMA-C02'},
+        {title:'Chapitre 03',base:'2BAC-SMA-C03'},
+        {title:'Chapitre 04',base:'2BAC-SMA-C04'},
+        {title:'Chapitre 05',base:'2BAC-SMA-C05'},
+        {title:'Chapitre 06',base:'2BAC-SMA-C06'},
+        {title:'Chapitre 07',base:'2BAC-SMA-C07'},
+        {title:'Chapitre 08',base:'2BAC-SMA-C08'},
+        {title:'Chapitre 09',base:'2BAC-SMA-C09'},
+        {title:'Chapitre 10',base:'2BAC-SMA-C10'},
+        {title:'Chapitre 11',base:'2BAC-SMA-C11'},
+        {title:'Chapitre 12',base:'2BAC-SMA-C12'},
+        {title:'Chapitre 13',base:'2BAC-SMA-C13'},
+        {title:'Chapitre 14',base:'2BAC-SMA-C14'},
+        {title:'Chapitre 15',base:'2BAC-SMA-C15'},
+        {title:'Chapitre 16',base:'2BAC-SMA-C16'},
+        {title:'Chapitre 17',base:'2BAC-SMA-C17'},
+        {title:'Chapitre 18',base:'2BAC-SMA-C18'},
+        {title:'Chapitre 19',base:'2BAC-SMA-C19'},
+        {title:'Chapitre 20',base:'2BAC-SMA-C20'},
+        {title:'Chapitre 21',base:'2BAC-SMA-C21'}
+      ],
+      '2BAC-Lettres':[
+        {title:'Chapitre 01',base:'2BAC-Lettres-C01'},
+        {title:'Chapitre 02',base:'2BAC-Lettres-C02'},
+        {title:'Chapitre 03',base:'2BAC-Lettres-C03'},
+        {title:'Chapitre 04',base:'2BAC-Lettres-C04'},
+        {title:'Chapitre 05',base:'2BAC-Lettres-C05'},
+        {title:'Chapitre 06',base:'2BAC-Lettres-C06'},
+        {title:'Chapitre 07',base:'2BAC-Lettres-C07'},
+        {title:'Chapitre 08',base:'2BAC-Lettres-C08'},
+        {title:'Chapitre 09',base:'2BAC-Lettres-C09'},
+        {title:'Chapitre 10',base:'2BAC-Lettres-C10'},
+        {title:'Chapitre 11',base:'2BAC-Lettres-C11'},
+        {title:'Chapitre 12',base:'2BAC-Lettres-C12'},
+        {title:'Chapitre 13',base:'2BAC-Lettres-C13'},
+        {title:'Chapitre 14',base:'2BAC-Lettres-C14'},
+        {title:'Chapitre 15',base:'2BAC-Lettres-C15'},
+        {title:'Chapitre 16',base:'2BAC-Lettres-C16'},
+        {title:'Chapitre 17',base:'2BAC-Lettres-C17'},
+        {title:'Chapitre 18',base:'2BAC-Lettres-C18'},
+        {title:'Chapitre 19',base:'2BAC-Lettres-C19'},
+        {title:'Chapitre 20',base:'2BAC-Lettres-C20'},
+        {title:'Chapitre 21',base:'2BAC-Lettres-C21'}
+      ]
+    };
 
-const BLOG =
-"https://odlxyz.blogspot.com";
 
-const homeHTML =
-document.getElementById("app").innerHTML;
-
-
-/* ACCUEIL */
-
+const app=document.getElementById('app');
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
+function closeMenu(){document.getElementById('mainMenu')?.classList.remove('open')}
+function shell(inner){app.innerHTML='<section id="view"><div class="wrap"><main class="mainbox"><button class="back" onclick="history.back()">← Retour</button>'+inner+'</main></div></section>';scrollTo({top:0,behavior:'smooth'});}
 function home(){
-
- document.getElementById("app").innerHTML =
- homeHTML;
-
- window.scrollTo({
-  top:0,
-  behavior:"smooth"
- });
-
- closeMenu();
+closeMenu();
+app.innerHTML=`<section class="hero"><div class="wrap hero-inner"><span class="eyebrow">Soutien Maths • Bac & Tronc Commun</span><h1>Maîtrise<em>les maths</em></h1><p>Cours, exercices corrigés, devoirs et examens pour progresser en TCS, 1BAC et 2BAC.</p><div class="actions"><a class="btn" onclick="route('Cours')">Explorer les cours →</a><a class="btn alt" onclick="route('Exercices corrigés')">Exercices corrigés</a></div></div></section>
+<section class="section"><div class="wrap"><h2>Ressources essentielles</h2><p>Tout ce qu'il faut pour travailler efficacement.</p><div class="resources">
+<div class="resource" onclick="route('Cours')"><b>Cours</b><span>Leçons structurées et méthodes.</span></div>
+<div class="resource" onclick="route('Exercices corrigés')"><b>Exercices</b><span>Entraînement avec solutions détaillées.</span></div>
+<div class="resource" onclick="route('Devoirs')"><b>Devoirs</b><span>Contrôles et devoirs corrigés.</span></div>
+<div class="resource" onclick="route('Examens')"><b>Examens</b><span>Préparation au baccalauréat.</span></div>
+</div></div></section>`;
+history.replaceState({route:'home'},'',location.pathname);
+scrollTo({top:0,behavior:'smooth'});
 }
-
-
-/* MENU MOBILE */
-
-function closeMenu(){
-
- const menu =
- document.getElementById("mainMenu");
-
- if(menu){
-  menu.classList.remove("open");
- }
-
+function go(label){history.pushState({route:label},'', '?odl='+encodeURIComponent(label));route(label,false)}
+function branchCard(kicker,name,label){return `<a class="odl-branch" onclick="go('${label.replace(/'/g,"\\'")}')"><small>${kicker}</small><h2>${name}</h2><span class="odl-branch-arrow">→</span></a>`}
+function renderBranches(level){let list=branches[level]||[];shell(`<div class="odl-choice-head"><h1>${esc(level)}</h1><p>Choisissez votre filière.</p></div><div class="odl-branches ${list.length===3?'three':''}">${list.map(b=>branchCard(esc(level),esc(b.name),b.label)).join('')}</div>`)}
+function renderChapters(key){let list=chapters[key]||[];shell(`<div class="odl-choice-head"><h1>${esc(key.replace(/-/g,' '))}</h1><p>Choisissez un chapitre.</p></div><div class="odl-chapter-list">${list.map((c,i)=>`<article class="odl-chapter"><span class="odl-num">${String(i+1).padStart(2,'0')}</span><h2>${esc(c.title)}</h2><div class="odl-resource-links"><a onclick="go('${c.base}-Cours')"><span class="odl-folder"></span>Cours</a><a onclick="go('${c.base}-Exercices')"><span class="odl-folder"></span>Exercices</a></div></article>`).join('')}</div>`)}
+const exerciceRoutes={
+'TCS':[{name:'Sciences',label:'TCS-Sciences-Exercices-Corriges'},{name:'Lettres',label:'TCS-Lettres-Exercices-Corriges'}],
+'1BAC':[{name:'Sciences',label:'1BAC-Sciences-Exercices-Corriges'},{name:'SMA',label:'1BAC-SMA-Exercices-Corriges'},{name:'Lettres',label:'1BAC-Lettres-Exercices-Corriges'}],
+'2BAC':[{name:'PC & SVT',label:'2BAC-PC-SVT-Exercices-Corriges'},{name:'SMA',label:'2BAC-SMA-Exercices-Corriges'},{name:'Lettres',label:'2BAC-Lettres-Exercices-Corriges'}]};
+const devoirRoutes={
+'TCS':[{name:'Sciences',key:'TCS-Sciences'},{name:'Lettres',key:'TCS-Lettres'}],
+'1BAC':[{name:'Sciences',key:'1BAC-Sciences'},{name:'SMA',key:'1BAC-SMA'},{name:'Lettres',key:'1BAC-Lettres'}],
+'2BAC':[{name:'PC & SVT',key:'2BAC-PC-SVT'},{name:'SMA',key:'2BAC-SMA'},{name:'Lettres',key:'2BAC-Lettres'}]};
+const devoirsConfig={'TCS-Sciences':{S1:[4,4,4,4],S2:[4,4,4,4]},'TCS-Lettres':{S1:[4,4,4,4],S2:[4,4,4,4]},'1BAC-Sciences':{S1:[4,4,4,4],S2:[4,4,4,4]},'1BAC-SMA':{S1:[4,4,4,4],S2:[4,4,4,4]},'1BAC-Lettres':{S1:[4,4,4,4],S2:[4,4,4,4]},'2BAC-PC-SVT':{S1:[4,4,4,4],S2:[4,4,4,4]},'2BAC-SMA':{S1:[4,4,4,4],S2:[4,4,4,4]},'2BAC-Lettres':{S1:[4,4,4,4],S2:[4,4,4,4]}};
+function route(label,push=true){
+closeMenu(); if(push) history.pushState({route:label},'', '?odl='+encodeURIComponent(label));
+if(label==='Cours'){shell(`<div class="odl-choice-head"><h1>Cours</h1><p>Choisissez votre niveau.</p></div><div class="odl-branches three">${['TCS','1BAC','2BAC'].map(x=>branchCard('COURS',x,x)).join('')}</div>`);return}
+if(branches[label]){renderBranches(label);return}
+if(chapters[label]){renderChapters(label);return}
+if(label==='Exercices corrigés'){shell(`<div class="odl-choice-head"><h1>Exercices corrigés</h1><p>Choisissez votre niveau.</p></div><div class="odl-branches three">${['TCS','1BAC','2BAC'].map(x=>branchCard('EXERCICES CORRIGÉS',x,'EX-'+x)).join('')}</div>`);return}
+if(label.startsWith('EX-')){let lvl=label.slice(3),xs=exerciceRoutes[lvl]||[];shell(`<div class="odl-choice-head"><h1>Exercices corrigés • ${lvl}</h1><p>Choisissez votre filière.</p></div><div class="odl-branches ${xs.length===3?'three':''}">${xs.map(b=>branchCard('EXERCICES CORRIGÉS',esc(b.name),b.label)).join('')}</div>`);return}
+if(label==='Devoirs'){shell(`<div class="odl-choice-head"><h1>Devoirs</h1><p>Choisissez votre niveau.</p></div><div class="odl-branches three">${['TCS','1BAC','2BAC'].map(x=>branchCard('DEVOIRS',x,'DEV-'+x)).join('')}</div>`);return}
+if(label.startsWith('DEV-')){let lvl=label.slice(4),ds=devoirRoutes[lvl]||[];shell(`<div class="odl-choice-head"><h1>Devoirs • ${lvl}</h1><p>Choisissez votre filière.</p></div><div class="odl-branches ${ds.length===3?'three':''}">${ds.map(b=>branchCard('DEVOIRS',esc(b.name),'Devoirs-'+b.key)).join('')}</div>`);return}
+let dm=label.match(/^Devoirs-(TCS|1BAC|2BAC)-(.+)$/);
+if(dm&&!/-S[12]$/.test(label)){let base=label.slice(8),pretty=base.replace(/-/g,' ').replace('PC SVT','PC & SVT');shell(`<div class="odl-choice-head"><h1>Devoirs • ${esc(pretty)}</h1><p>Choisissez le semestre.</p></div><div class="odl-branches">${branchCard('SEMESTRE','Semestre 1','Devoirs-'+base+'-S1')}${branchCard('SEMESTRE','Semestre 2','Devoirs-'+base+'-S2')}</div>`);return}
+let sm=label.match(/^Devoirs-(.+)-S([12])$/);
+if(sm){let base=sm[1],sem=sm[2],counts=(devoirsConfig[base]||{})['S'+sem]||[4,4,4,4];shell(`<div class="odl-choice-head"><h1>${esc(base.replace(/-/g,' '))} • Semestre ${sem}</h1><p>Les exemples sont affichés sous chaque devoir.</p></div><div class="odl-chapter-list">${counts.map((n,i)=>{let dn=String(i+1).padStart(2,'0');return `<article class="odl-chapter"><span class="odl-num">${dn}</span><h2>Devoir ${dn}</h2><div class="odl-resource-links">${Array.from({length:n},(_,j)=>{let en=String(j+1).padStart(2,'0');return `<a onclick="go('${base}-S${sem}-Devoir-${dn}-Exemple-${en}')"><span class="odl-folder"></span>Exemple ${en}</a>`}).join('')}</div></article>`}).join('')}</div>`);return}
+if(label==='Examens'){shell(`<div class="odl-choice-head"><h1>Examens</h1><p>Choisissez le type d’examen.</p></div><div class="odl-branches">${branchCard('EXAMENS','Examens régionaux','Examens-Regionaux')}${branchCard('EXAMENS','Examens nationaux','Examens-Nationaux')}</div>`);return}
+if(label==='Examens-Regionaux'){shell(`<div class="odl-choice-head"><h1>Examens régionaux</h1></div><div class="odl-branches">${branchCard('RÉGIONAL','1BAC','Examens-Regionaux-1BAC')}</div>`);return}
+if(label==='Examens-Regionaux-1BAC'){shell(`<div class="odl-choice-head"><h1>1BAC • Examens régionaux</h1></div><div class="odl-branches">${branchCard('1BAC','Lettres','Examens-Regionaux-1BAC-Lettres')}</div>`);return}
+if(label==='Examens-Nationaux'){shell(`<div class="odl-choice-head"><h1>Examens nationaux</h1></div><div class="odl-branches">${branchCard('NATIONAL','2BAC','Examens-Nationaux-2BAC')}</div>`);return}
+if(label==='Examens-Nationaux-2BAC'){shell(`<div class="odl-choice-head"><h1>2BAC • Examens nationaux</h1></div><div class="odl-branches">${branchCard('2BAC','PC / SVT','Examens-Nationaux-2BAC-PC-SVT')}${branchCard('2BAC','SMA','Examens-Nationaux-2BAC-SMA')}</div>`);return}
+if(['Examens-Regionaux-1BAC-Lettres','Examens-Nationaux-2BAC-PC-SVT','Examens-Nationaux-2BAC-SMA'].includes(label)){let years=[];for(let y=2004;y<=2025;y++)years.push(`${y}-${y+1}`);shell(`<div class="odl-choice-head"><h1>${esc(label.replace(/-/g,' '))}</h1><p>Choisissez un sujet ou son corrigé.</p></div><div class="odl-chapter-list">${years.map((y,i)=>`<article class="odl-chapter"><span class="odl-num">${String(i+1).padStart(2,'0')}</span><h2>${y.replace('-',' / ')}</h2><div class="odl-resource-links"><a onclick="go('${label}-${y}-Sujet')"><span class="odl-folder"></span>Sujet</a><a onclick="go('${label}-${y}-Corrige')"><span class="odl-folder"></span>Corrigé</a></div></article>`).join('')}</div>`);return}
+loadFeed(label);
 }
-
-
-/* CHARGER LABEL BLOGGER */
-
-function loadLabel(label){
-
- closeMenu();
-
- const app =
- document.getElementById("app");
-
- app.innerHTML = `
-
- <main id="content">
-
-  <div class="wrap">
-
-   <button class="back"
-   onclick="home()">
-   ← Retour
-   </button>
-
-   <h1 class="page-title">
-   ${escapeHTML(label)}
-   </h1>
-
-   <div class="posts" id="posts">
-
-    <div class="post">
-     Chargement depuis Blogger...
-    </div>
-
-   </div>
-
-  </div>
-
- </main>
-
- `;
-
- window.scrollTo({
-  top:0,
-  behavior:"smooth"
- });
-
- const old =
- document.getElementById("blogger-feed");
-
- if(old){
-  old.remove();
- }
-
- window.currentBloggerLabel =
- label;
-
- const script =
- document.createElement("script");
-
- script.id =
- "blogger-feed";
-
- script.src =
- BLOG +
- "/feeds/posts/default/-/" +
- encodeURIComponent(label) +
- "?alt=json-in-script&max-results=50&callback=renderBloggerPosts";
-
- script.onerror =
- function(){
-
-  document.getElementById("posts").innerHTML =
-  '<div class="post">Impossible de charger les articles.</div>';
-
- };
-
- document.body.appendChild(script);
-
+function loadFeed(label){
+shell(`<div id="feed"><div class="odl-choice-head"><h1>${esc(label.replace(/-/g,' '))}</h1><p>Chargement depuis Blogger…</p></div></div>`);
+window.__feedLabel=label;document.getElementById('blogger-feed')?.remove();let s=document.createElement('script');s.id='blogger-feed';s.src= BLOG+'/feeds/posts/default/-/'+encodeURIComponent(label)+'?alt=json-in-script&max-results=50&callback=renderFeed';s.onerror=()=>document.getElementById('feed').innerHTML='<p>Impossible de charger les articles.</p>';document.body.appendChild(s)
 }
-
-
-/* AFFICHER ARTICLES */
-
-function renderBloggerPosts(data){
-
- const container =
- document.getElementById("posts");
-
- if(!container){
-  return;
- }
-
- const entries =
- data.feed.entry || [];
-
- if(!entries.length){
-
-  container.innerHTML =
-  '<div class="post">Aucun article trouvé dans cette catégorie.</div>';
-
-  return;
-
- }
-
- container.innerHTML = "";
-
- entries.forEach(article => {
-
-  const title =
-  article.title.$t;
-
-  const linkObject =
-  article.link.find(
-   link => link.rel === "alternate"
-  );
-
-  const link =
-  linkObject ?
-  linkObject.href :
-  "#";
-
-  const content =
-  article.summary?.$t ||
-  article.content?.$t ||
-  "";
-
-  const text =
-  content
-  .replace(/<[^>]*>/g," ")
-  .replace(/\s+/g," ")
-  .trim()
-  .substring(0,260);
-
-  const card =
-  document.createElement("article");
-
-  card.className =
-  "post";
-
-  card.innerHTML = `
-
-   <h2>
-   ${escapeHTML(title)}
-   </h2>
-
-   <p>
-   ${escapeHTML(text)}...
-   </p>
-
-   <a
-   class="read"
-   href="${link}"
-   target="_blank"
-   rel="noopener">
-   Lire l'article →
-   </a>
-
-  `;
-
-  container.appendChild(card);
-
- });
-
+function renderFeed(data){
+let box=document.getElementById('feed'),entries=data?.feed?.entry||[];let h=`<div class="odl-choice-head"><h1>${esc(__feedLabel.replace(/-/g,' '))}</h1></div>`;if(!entries.length){box.innerHTML=h+'<p>Aucun article trouvé dans cette catégorie.</p>';return}
+entries.forEach((e,i)=>{let title=e.title?.$t||'Article',body=e.content?.$t||e.summary?.$t||'',sn=body.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim().slice(0,260);let date=e.published?.$t?new Date(e.published.$t).toLocaleDateString('fr-FR'):'';h+=`<article class="odl-post-card"><h2>${esc(title)}</h2><div class="odl-meta">${esc(date)}</div><div class="odl-snippet">${esc(sn)}…</div><a class="odl-read" onclick="openArticle(${i})">Lire l’article →</a></article>`});box.innerHTML=h;window.__entries=entries
 }
-
-
-/* SECURITE TEXTE */
-
-function escapeHTML(value){
-
- return String(value)
- .replace(/&/g,"&amp;")
- .replace(/</g,"&lt;")
- .replace(/>/g,"&gt;")
- .replace(/"/g,"&quot;")
- .replace(/'/g,"&#039;");
-
-}
-
+function openArticle(i){let e=window.__entries?.[i];if(!e)return;let title=e.title?.$t||'Article',body=e.content?.$t||e.summary?.$t||'';history.pushState({article:true},'', '?article='+i);shell(`<div class="odl-choice-head"><h1>${esc(title)}</h1></div><div class="odl-full-body">${body}</div>`);if(window.MathJax?.typesetPromise) MathJax.typesetPromise()}
+window.addEventListener('popstate',()=>{let p=new URLSearchParams(location.search),r=p.get('odl');if(r)route(r,false);else home()});
+(function init(){let p=new URLSearchParams(location.search),r=p.get('odl');if(r)route(r,false);else home()})();
 </script>
-
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
