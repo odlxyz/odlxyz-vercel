@@ -3,28 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ODLXYZ — Soutien Maths</title>
+<title>ODLXYZ — Soutien Maths</title><meta name="description" content="Cours de mathématiques, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#111318;--muted:#737986;--paper:#f3f1ec;--card:#fff;--line:rgba(17,19,24,.10);--accent:#1f5eff;--shadow:0 18px 55px rgba(17,19,24,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1320px,94%);margin:auto}
-.header{position:fixed;top:18px;left:0;right:0;z-index:50}.nav{min-height:62px;padding:8px 18px 8px 12px;background:rgba(255,255,255,.93);border-radius:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 12px 35px rgba(0,0,0,.08);backdrop-filter:blur(16px)}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;cursor:pointer}.mark{width:42px;height:42px;border-radius:11px;background:#0c0d10;color:#fff;display:grid;place-items:center}.menu{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.menu a{padding:10px 8px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#686e7b;cursor:pointer}.mobile{display:none;border:0;background:#f0f1f3;border-radius:10px;padding:9px 11px;font-size:18px}
-.hero{min-height:92vh;padding:130px 0 50px;display:flex;align-items:center;color:#fff;background:linear-gradient(115deg,rgba(16,18,23,.80),rgba(16,18,23,.52)),linear-gradient(135deg,#777d87,#b8b8b5);position:relative;overflow:hidden}.hero:before{content:'∫   π   √x   Σ   f(x)';position:absolute;right:-2%;top:19%;font-family:Georgia,serif;font-size:clamp(70px,10vw,150px);font-style:italic;color:rgba(255,255,255,.06);transform:rotate(-7deg);white-space:nowrap}.hero-inner{position:relative;z-index:2}.eyebrow{display:inline-flex;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 17px;font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase}.hero h1{margin:28px 0 18px;font-size:clamp(64px,10vw,142px);line-height:.78;letter-spacing:-7px;font-weight:900;text-transform:uppercase}.hero h1 em{display:block;font-family:Georgia,serif;font-size:.72em;font-weight:400;text-transform:none;letter-spacing:-4px;margin-left:11%;margin-top:18px}.hero p{max-width:760px;color:rgba(255,255,255,.8);font-size:clamp(16px,1.5vw,21px)}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;padding:13px 18px;border-radius:999px;background:#fff;color:#111;font-weight:900;text-transform:uppercase;cursor:pointer}.btn.alt{background:rgba(255,255,255,.11);color:#fff;border:1px solid rgba(255,255,255,.16)}
-.section{padding:72px 0}.section h2{font-size:clamp(32px,4vw,54px);line-height:1;letter-spacing:-2px;margin:0 0 12px}.resources{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:28px}.resource{background:#17191e;color:#fff;border-radius:22px;padding:24px;min-height:150px;cursor:pointer;transition:.3s}.resource:hover{transform:translateY(-6px)}.resource b{display:block;font-size:18px;margin-bottom:8px}.resource span{font-size:14px;color:#aeb3bd}
-#view{padding:120px 0 70px;min-height:75vh}.mainbox{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
-.odl-choice-head{margin-bottom:26px}.odl-choice-head h1{font-size:clamp(34px,5vw,58px);line-height:1;margin:0 0 10px;letter-spacing:-2px}.odl-choice-head p{color:var(--muted);margin:0}.odl-branches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.odl-branches.three{grid-template-columns:repeat(3,minmax(0,1fr))}.odl-branch{background:#f8f8f7;border:1px solid var(--line);border-radius:24px;padding:28px;min-height:180px;position:relative;cursor:pointer;transition:.3s}.odl-branch:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.odl-branch small{font-weight:900;letter-spacing:2px;color:var(--muted)}.odl-branch h2{font-size:28px;margin:28px 0 0}.odl-branch-arrow{position:absolute;right:24px;bottom:20px;font-size:28px;font-weight:700}
-.odl-chapter-list{position:relative;padding-left:28px}.odl-chapter-list:before{content:'';position:absolute;left:17px;top:30px;bottom:30px;width:2px;background:#e4e4e4}.odl-chapter{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:0 0 18px;box-shadow:0 8px 22px rgba(17,19,24,.06)}.odl-num{position:absolute;left:-48px;top:16px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#d93025;color:#fff;font-size:18px;font-weight:900}.odl-chapter h2{font-size:25px;line-height:1.2;margin:0 0 12px;color:#2c4057}.odl-resource-links{display:grid;gap:8px}.odl-resource-links a{color:#1677e8;font-weight:800;cursor:pointer}.odl-folder{width:17px;height:13px;border-radius:2px;background:#1677e8;display:inline-block;margin-right:9px}
-.back{display:inline-flex;margin-bottom:22px;padding:10px 16px;border:1px solid #dfe5ee;border-radius:999px;background:#fff;font-weight:800;cursor:pointer}
-.odl-post-card{padding:0 0 28px;margin:0 0 28px;border-bottom:1px solid var(--line)}.odl-post-card h2{font-size:28px;line-height:1.2;margin:0 0 10px}.odl-meta{font-size:13px;color:var(--muted);margin-bottom:14px}.odl-snippet{color:#555}.odl-read{display:inline-flex;margin-top:14px;font-weight:800;color:#1748c9;cursor:pointer}.odl-full-body{font-size:17px;line-height:1.8;color:#333}.odl-full-body img{max-width:100%;height:auto;border-radius:16px}.odl-full-body iframe{max-width:100%}
-.footer-shell{padding:18px 0 28px}.footer{width:min(1320px,94%);margin:auto;background:#111318;color:#c5c8d0;padding:44px 38px 22px;border-radius:30px}.footer h3{color:#fff}.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:18px;font-size:13px}
-@media(max-width:900px){.mobile{display:block}.menu{display:none;position:absolute;top:72px;left:3%;right:3%;background:#fff;border-radius:18px;padding:12px;box-shadow:var(--shadow)}.menu.open{display:grid}.resources{grid-template-columns:1fr 1fr}.odl-branches,.odl-branches.three{grid-template-columns:1fr}.hero h1{letter-spacing:-4px}}
-@media(max-width:560px){.resources{grid-template-columns:1fr}.hero h1{font-size:58px}.mainbox{padding:20px}.odl-chapter-list{padding-left:22px}.odl-num{left:-39px;width:38px;height:38px;font-size:15px}}
-
-/* ===== Styles restaurés depuis le thème Blogger ===== */
-
 :root{--ink:#111318;--muted:#737986;--paper:#f3f1ec;--card:#fff;--line:rgba(17,19,24,.10);--accent:#1f5eff;--radius:28px;--shadow:0 18px 55px rgba(17,19,24,.10)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}.wrap{width:min(1320px,96%);margin:auto}
 .header{position:fixed;top:18px;left:0;right:0;z-index:50;background:transparent}.nav{min-height:62px;padding:8px 18px 8px 12px;background:rgba(255,255,255,.91);border:1px solid rgba(255,255,255,.75);border-radius:22px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:0 12px 35px rgba(0,0,0,.08);backdrop-filter:blur(16px)}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;letter-spacing:-.5px}.mark{width:42px;height:42px;border-radius:11px;background:#0c0d10;color:#fff;display:grid;place-items:center;font-size:19px}.menu{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.menu a{padding:10px 9px;font-size:13px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:#686e7b;position:relative}.menu a:after{content:'';position:absolute;left:9px;right:9px;bottom:5px;height:2px;background:#111;transform:scaleX(0);transform-origin:left;transition:transform .28s ease}.menu a:hover{color:#111}.menu a:hover:after{transform:scaleX(1)}
@@ -68,8 +51,8 @@
 .odl-contact-page{padding:34px 0 12px}.odl-contact-title{text-align:center;margin:0 0 54px;position:relative}.odl-contact-title .ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-56%);font-size:clamp(68px,11vw,150px);font-weight:300;letter-spacing:10px;color:rgba(17,19,24,.035);white-space:nowrap;pointer-events:none}.odl-contact-title h1{position:relative;display:inline-flex;align-items:center;gap:16px;margin:0;font-size:28px;letter-spacing:-.5px;text-transform:uppercase}.odl-contact-title h1:before,.odl-contact-title h1:after{content:'';width:34px;height:3px;background:#df4a46;border-radius:9px}.odl-contact-grid{display:grid;grid-template-columns:.72fr 1.48fr;gap:22px;align-items:stretch}.odl-contact-info,.odl-contact-formbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;box-shadow:0 12px 34px rgba(17,19,24,.055)}.odl-contact-info{display:flex;flex-direction:column;gap:28px}.odl-contact-block h3,.odl-contact-formbox h2{margin:0 0 8px;padding-left:11px;border-left:3px solid #df3f3a;font-size:18px;line-height:1.2}.odl-contact-block p,.odl-contact-block a{display:block;margin:5px 0 0 14px;color:#3f4650;font-size:14px}.odl-contact-block a:hover{color:#d93025}.odl-contact-social{display:flex;gap:9px;margin:2px 0 0 14px}.odl-contact-social a{width:34px;height:34px;margin:0;border-radius:7px;background:#111318;color:#fff;display:grid;place-items:center;font-size:13px;font-weight:900;transition:.25s}.odl-contact-social a:hover{transform:translateY(-3px);background:#d93025;color:#fff}.odl-contact-formbox h2{font-size:25px;margin-bottom:28px}.odl-contact-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}.odl-contact-form .full{grid-column:1/-1}.odl-contact-form input,.odl-contact-form textarea{width:100%;border:1px solid #d7d9dd;border-radius:7px;background:#fff;padding:14px 13px;font:inherit;color:#20242a;outline:none;transition:.25s}.odl-contact-form input:focus,.odl-contact-form textarea:focus{border-color:#df3f3a;box-shadow:0 0 0 3px rgba(223,63,58,.08)}.odl-contact-form textarea{min-height:130px;resize:vertical}.odl-contact-submit{grid-column:1/-1;width:max-content;border:0;border-radius:8px;background:#df3f3a;color:#fff;padding:13px 22px;font:inherit;font-weight:800;cursor:pointer;transition:.25s}.odl-contact-submit:hover{transform:translateY(-2px);background:#c92e2a;box-shadow:0 10px 24px rgba(217,48,37,.22)}.odl-contact-submit.odl-sent{background:#16a34a!important;color:#fff!important;box-shadow:0 10px 24px rgba(22,163,74,.28)!important;transform:none!important}.odl-contact-note{grid-column:1/-1;margin:0;color:var(--muted);font-size:12px}@media(max-width:850px){.odl-contact-grid{grid-template-columns:1fr}.odl-contact-title{margin-bottom:34px}}@media(max-width:560px){.odl-contact-page{padding-top:12px}.odl-contact-info,.odl-contact-formbox{padding:22px}.odl-contact-form{grid-template-columns:1fr}.odl-contact-form .full,.odl-contact-submit,.odl-contact-note{grid-column:1}.odl-contact-title .ghost{font-size:64px}}
 
 .odl-about21{padding:22px 0 30px}.odl-about21-card{position:relative;overflow:hidden;display:grid;grid-template-columns:1.02fr .98fr;gap:30px;align-items:center;min-height:560px;padding:58px;border:1px solid #e8e8f4;border-radius:30px;background:linear-gradient(135deg,#fff 0%,#fff 58%,#f5f2ff 100%);box-shadow:0 25px 70px rgba(55,43,120,.10)}.odl-about21-card:before,.odl-about21-card:after{content:'';position:absolute;border-radius:50%;background:#ece8ff;z-index:0}.odl-about21-card:before{width:150px;height:150px;right:35%;top:-85px}.odl-about21-card:after{width:80px;height:80px;left:46%;bottom:-35px}.odl-about21-copy,.odl-about21-art{position:relative;z-index:1}.odl-about21-kicker{display:flex;align-items:center;gap:12px;color:#6454e8;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}.odl-about21-kicker:before{content:'';width:46px;height:3px;border-radius:4px;background:#6454e8}.odl-about21 h1{margin:0 0 18px;font-size:clamp(50px,7vw,88px);line-height:.92;letter-spacing:-4px;color:#2f2b74;text-transform:uppercase}.odl-about21 h2{margin:0 0 16px;font-size:clamp(24px,3vw,38px);line-height:1.15;letter-spacing:-1.2px;color:#111827}.odl-about21-desc{max-width:650px;margin:0;color:#737791;font-size:16px;line-height:1.85}.odl-about21-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.odl-about21-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;background:linear-gradient(135deg,#6655f5,#4f3ce0);color:#fff!important;font-weight:900;box-shadow:0 12px 28px rgba(101,85,245,.28);transition:.25s}.odl-about21-btn:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(101,85,245,.38)}.odl-about21-features{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px}.odl-about21-feature{display:flex;align-items:center;gap:10px}.odl-about21-feature i{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#f0edff;color:#5e4ee7;font-style:normal;font-weight:900}.odl-about21-feature b{display:block;font-size:13px}.odl-about21-feature small{display:block;color:#8b8fa4;margin-top:2px}.odl-about21-art{min-height:430px;display:flex;align-items:center;justify-content:center}.odl-about21-blob{position:absolute;width:95%;height:86%;border-radius:48% 52% 45% 55% / 55% 45% 55% 45%;background:linear-gradient(145deg,#dcd7ff,#f0edff);transform:rotate(-4deg)}.odl-about21-photo{position:relative;width:90%;height:390px;object-fit:cover;border-radius:44% 56% 45% 55% / 56% 44% 56% 44%;box-shadow:0 24px 55px rgba(50,42,110,.18);border:8px solid rgba(255,255,255,.72)}.odl-about21-math{position:absolute;z-index:2;display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:#fff;box-shadow:0 12px 30px rgba(54,46,120,.14);font-size:20px;font-weight:900;color:#5d4ce6}.odl-about21-m1{left:2%;top:12%}.odl-about21-m2{right:0;top:20%;color:#e5a11a}.odl-about21-m3{right:5%;bottom:10%;color:#1fa7a0}.odl-about21-note{position:absolute;left:7%;bottom:5%;z-index:2;padding:10px 14px;border-radius:14px;background:#fff;color:#4d43b8;font-size:13px;font-weight:800;transform:rotate(-4deg);box-shadow:0 10px 25px rgba(54,46,120,.12)}@media(max-width:900px){.odl-about21-card{grid-template-columns:1fr;padding:38px 28px}.odl-about21-art{min-height:360px}.odl-about21-photo{height:330px}.odl-about21 h1{letter-spacing:-2px}}@media(max-width:560px){.odl-about21{padding-top:8px}.odl-about21-card{padding:30px 20px;border-radius:22px}.odl-about21 h1{font-size:48px}.odl-about21-art{min-height:300px}.odl-about21-photo{height:280px;width:96%}.odl-about21-features{gap:14px}.odl-about21-feature{width:100%}}
+]]>
 
-/* ===== ODLXYZ FINAL : DESIGN DES ARTICLES DE COURS ===== */
 .odl-full-body .odl-course{max-width:900px;margin:20px auto;color:#172033;line-height:1.8}
 .odl-full-body .odl-course-header{padding:35px 25px;border-radius:24px;background:linear-gradient(135deg,#f7f9ff,#fff);box-shadow:0 12px 35px rgba(0,0,0,.08);margin-bottom:30px;text-align:center}
 .odl-full-body .odl-course-badge{display:inline-block;padding:7px 15px;border-radius:50px;background:#eef3ff;color:#1748c9;font-size:13px;font-weight:800;margin-bottom:12px}
@@ -93,19 +76,13 @@
 
 .odl-essential-motion{position:relative;overflow:hidden;isolation:isolate;padding:96px 0}
 .odl-essential-motion:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(247,249,252,.90),rgba(255,255,255,.82));z-index:-1}
-.odl-essential-stage{position:absolute;inset:-50px -12%;z-index:-2;display:flex;flex-direction:column;justify-content:center;gap:24px;transform:rotate(-5deg);opacity:.50;pointer-events:none}
-.odl-motion-row{display:flex;width:max-content;gap:18px;animation:odlMarqueeLeft 28s linear infinite;will-change:transform}
-.odl-motion-row.odl-motion-right{animation-name:odlMarqueeRight;animation-duration:32s}
-.odl-motion-row.odl-motion-slow{animation-duration:38s}
-.odl-motion-row span{width:190px;height:108px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;background:#fff;border:1px solid #dfe5ee;border-radius:22px;box-shadow:0 18px 45px rgba(18,35,64,.10);font-size:19px;font-weight:900;color:#29415e}
-.odl-motion-row:nth-child(2) span{width:220px;height:118px}
+
 .odl-essential-front{position:relative;z-index:2}
 .odl-essential-front .section-head{background:rgba(255,255,255,.72);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);padding:20px 24px;border-radius:22px;width:max-content;max-width:100%}
 .odl-essential-front .resource{box-shadow:0 20px 55px rgba(17,19,24,.18)}
-@keyframes odlMarqueeLeft{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes odlMarqueeRight{from{transform:translateX(-50%)}to{transform:translateX(0)}}
-@media(max-width:700px){.odl-essential-motion{padding:72px 0}.odl-essential-stage{inset:-20px -45%;gap:16px;opacity:.40;transform:rotate(-6deg)}.odl-motion-row{gap:12px;animation-duration:24s}.odl-motion-row span{width:145px;height:86px;border-radius:17px;font-size:15px}.odl-motion-row:nth-child(2) span{width:165px;height:92px}.odl-essential-front .section-head{padding:16px 18px}}
-@media(prefers-reduced-motion:reduce){.odl-motion-row{animation:none!important}}
+
+
+@media(max-width:700px){.odl-essential-motion{padding:72px 0}.odl-essential-front .section-head{padding:16px 18px}}
 
 .odl-essential-motion .odl-shopify-card{
  opacity:0;
@@ -145,20 +122,84 @@
  .odl-essential-motion .odl-shopify-card b,.odl-essential-motion .odl-shopify-card span{opacity:1!important;transform:none!important;transition:none!important}
 }
 
-
 .odl-back-wrap{margin:0 0 18px}
-.odl-back-btn{display:inline-flex;align-items:center;gap:9px;padding:10px 16px;border:1px solid #dfe5ee;border-radius:999px;background:#fff;color:#14233b;font-weight:800;box-shadow:0 8px 22px rgba(18,35,64,.08);cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
-.odl-back-btn:hover{transform:translateX(-3px);box-shadow:0 11px 28px rgba(18,35,64,.13)}
+.odl-back-btn{display:inline-flex;align-items:center;gap:9px;padding:10px 16px;border:1px solid #1677e8;border-radius:999px;background:#1677e8;color:#fff;font-weight:800;box-shadow:0 8px 22px rgba(22,119,232,.22);cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.odl-back-btn:hover{transform:translateX(-3px);background:#0f66cc;box-shadow:0 11px 28px rgba(22,119,232,.32)}
 .odl-back-arrow{font-size:20px;line-height:1}
 
 
-/* ===== ODLXYZ : STABILITE + PERFORMANCE ===== */
-.odl-thumb{aspect-ratio:16/9;background:#eef1f5}
-.odl-full-body img{height:auto;max-width:100%}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto!important}
+.odl-level-cta{padding:34px 0 42px;background:var(--paper)}
+.odl-level-cta-head{text-align:center;margin-bottom:24px}
+.odl-level-cta-head>span{display:inline-block;font-size:11px;font-weight:900;letter-spacing:2.5px;color:#737986;margin-bottom:8px}
+.odl-level-cta-head h2{margin:0;font-size:clamp(34px,4vw,52px);letter-spacing:-2px;line-height:1}
+.odl-level-cta-head p{margin:10px 0 0;color:var(--muted)}
+.odl-level-cta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.odl-level-cta-card{position:relative;min-height:170px;padding:26px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 12px 35px rgba(17,19,24,.06);transition:transform .3s ease,box-shadow .3s ease}
+.odl-level-cta-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(17,19,24,.12)}
+.odl-level-cta-card small{display:block;color:#737986;font-weight:900;letter-spacing:2px}
+.odl-level-cta-card b{display:block;margin-top:30px;font-size:30px;line-height:1}
+.odl-level-cta-card span{position:absolute;right:25px;bottom:20px;font-size:28px}
+@media(max-width:760px){.odl-level-cta-grid{grid-template-columns:1fr}.odl-level-cta-card{min-height:145px}}
+
+
+.odl-contact-social a{font-size:0}
+.odl-contact-social svg{width:18px;height:18px;fill:currentColor;display:block}
+
+.odl-level-cta .odl-level-anim{opacity:0;transform:translateY(58px) scale(.92) rotateX(8deg);filter:blur(8px);transform-origin:50% 100%;transition:opacity .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1),filter .5s ease}
+.odl-level-cta.odl-levels-in .odl-level-anim{opacity:1;transform:translateY(0) scale(1) rotateX(0);filter:blur(0)}
+.odl-level-cta.odl-levels-in .odl-level-delay-1{transition-delay:.05s}
+.odl-level-cta.odl-levels-in .odl-level-delay-2{transition-delay:.55s}
+.odl-level-cta.odl-levels-in .odl-level-delay-3{transition-delay:1.05s}
+@media(prefers-reduced-motion:reduce){.odl-level-cta .odl-level-anim{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}}
+
+
+.odl-level-cta{background:linear-gradient(135deg,#eaf3ff 0%,#f5f9ff 55%,#e6f0ff 100%)}
+.odl-level-cta-head>span{color:#1677e8}
+.odl-level-cta-head h2{color:#15395f}
+.odl-level-cta-card{border-color:#cfe2fb;background:linear-gradient(145deg,#ffffff,#eef6ff);box-shadow:0 14px 36px rgba(22,119,232,.10)}
+.odl-level-cta-card:hover{border-color:#9bc7f5;box-shadow:0 22px 52px rgba(22,119,232,.18)}
+.odl-level-cta-card small{color:#1677e8}
+.odl-level-cta-card b{color:#15395f}
+.odl-level-cta-card span{color:#1677e8}
+.odl-level-card,.odl-card,.odl-nav-card,.odl-choice-card{
+  position:relative; overflow:hidden; text-align:center;
+}
+.odl-level-card > *,.odl-card > *,.odl-nav-card > *,.odl-choice-card > *{
+  position:relative; z-index:2;
+}
+.odl-level-card:before,.odl-card:before,.odl-nav-card:before,.odl-choice-card:before{content:none!important;display:none!important;}
+.odl-level-card:after,.odl-card:after,.odl-nav-card:after,.odl-choice-card:after{content:none!important;display:none!important;}
+@keyframes odlMathFloat{
+  from{transform:translate3d(-8px,4px,0) rotate(-2deg)}
+  to{transform:translate3d(14px,17px,0) rotate(2deg)}
+}
+@keyframes odlMathFloat2{
+  from{transform:translate3d(8px,0,0) rotate(2deg)}
+  to{transform:translate3d(-14px,-13px,0) rotate(-2deg)}
+}
+/* Texte à deux tons inspiré de la référence : première ligne sombre, seconde gris clair */
+.odl-section-title,.odl-page-title,.odl-hierarchy-title{
+  text-transform:uppercase; text-align:center;
+  font-weight:900; letter-spacing:-2px; line-height:.94;
+}
+.odl-section-title .odl-title-dark,.odl-page-title .odl-title-dark,.odl-hierarchy-title .odl-title-dark{
+  display:block; color:#111827;
+}
+.odl-section-title .odl-title-light,.odl-page-title .odl-title-light,.odl-hierarchy-title .odl-title-light{
+  display:block; color:#d7dbe2;
+}
+@media (prefers-reduced-motion:reduce){
+  .odl-level-card:before,.odl-level-card:after,.odl-card:before,.odl-card:after,
+  .odl-nav-card:before,.odl-nav-card:after,.odl-choice-card:before,.odl-choice-card:after{animation:none}
 }
 
+/* Vercel compatibility */
+a,[onclick]{cursor:pointer}
+#app{min-height:260px}
+.socials svg,.odl-contact-social svg,.floating-wa svg,.wa-btn svg{display:block;fill:currentColor}
+.socials svg{width:20px;height:20px}
+.odl-contact-social svg{width:18px;height:18px}
+.floating-wa svg{width:27px;height:27px}
 
 </style>
 <!-- Google tag (gtag.js) -->
@@ -167,7 +208,7 @@
 </head>
 <body>
 <header class="header"><div class="wrap nav">
-<div class="brand" onclick="home()"><span class="mark">∑</span><span>Odlaxy</span></div>
+<div class="brand" onclick="home()"><span class="mark">∑</span><span>ODLXYZ</span></div>
 <button class="mobile" onclick="document.getElementById('mainMenu').classList.toggle('open')">☰</button>
 <nav class="menu" id="mainMenu">
 <a onclick="home()">Accueil</a><a onclick="route('TCS')">TCS</a><a onclick="route('1BAC')">1BAC</a><a onclick="route('2BAC')">2BAC</a>
@@ -176,16 +217,22 @@
 
 <div id="app"></div>
 
-<div class="footer-shell"><footer class="footer">
-<div class="footer-grid">
-<div><h3 class="footer-brand">∑ Odlaxy</h3><p>Cours, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC.</p>
-<div class="socials"><a class="facebook" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07C2 17.1 5.66 21.27 10.44 22v-7.02H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.47h-1.25c-1.24 0-1.63.77-1.63 1.57v1.89h2.77l-.44 2.91h-2.33V22C18.34 21.27 22 17.1 22 12.07Z"/></svg></a><a class="instagram" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a><a class="pinterest" href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 3 5.96 3 10.67c0 3.48 1.95 5.47 3.13 5.47.49 0 .77-1.36.77-1.75 0-.46-1.17-1.44-1.17-3.35 0-3.97 3.02-6.79 6.93-6.79 3.36 0 5.85 1.91 5.85 5.42 0 2.62-1.05 7.54-4.46 7.54-1.23 0-2.28-.89-2.28-2.16 0-1.86 1.3-3.66 1.3-5.58 0-3.26-4.62-2.67-4.62 1.27 0 .83.1 1.75.47 2.51-.68 2.93-2.08 7.29-2.08 10.31 0 .93.13 1.85.22 2.78.17.19.09.17.35.07 2.49-3.41 2.4-4.08 3.53-8.55.61 1.17 2.18 1.8 3.44 1.8 5.27 0 7.64-5.14 7.64-9.77C22 4.94 17.77 2 12 2Z"/></svg></a><a class="youtube" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a></div></div>
+<section class="odl-level-cta reveal"><div class="wrap">
+<div class="odl-level-cta-head"><span>PARCOURS</span><h2>Choisis ton niveau</h2><p>Accède directement aux ressources de ton niveau.</p></div>
+<div class="odl-level-cta-grid">
+<a class="odl-level-cta-card odl-level-anim odl-level-delay-1" onclick="route('TCS')"><small>NIVEAU</small><b>TCS</b><span>→</span></a>
+<a class="odl-level-cta-card odl-level-anim odl-level-delay-2" onclick="route('1BAC')"><small>NIVEAU</small><b>1BAC</b><span>→</span></a>
+<a class="odl-level-cta-card odl-level-anim odl-level-delay-3" onclick="route('2BAC')"><small>NIVEAU</small><b>2BAC</b><span>→</span></a>
+</div></div></section>
+<div class="footer-shell"><footer class="footer"><div class="footer-grid">
+<div><h3 class="footer-brand">ODLXYZ</h3><p>Soutien Maths – Bac &amp; Tronc Commun. Cours, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC.</p>
+<div class="socials"><a aria-label="Facebook" class="facebook" href="#" title="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.25 10.44 22v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22C18.34 21.25 22 17.08 22 12.06z"/></svg></a><a aria-label="Instagram" class="instagram" href="#" title="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg></a><a aria-label="Pinterest" class="pinterest" href="#" title="Pinterest"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12.2 2C6.7 2 4 5.94 4 9.23c0 2.5.95 4.72 2.98 5.55.33.14.63.01.73-.36.07-.25.23-.9.3-1.17.1-.36.06-.49-.2-.8-.59-.7-.96-1.6-.96-2.88 0-3.71 2.78-7.03 7.23-7.03 3.94 0 6.11 2.41 6.11 5.63 0 4.23-1.87 7.8-4.65 7.8-1.54 0-2.69-1.27-2.32-2.83.44-1.86 1.3-3.87 1.3-5.22 0-1.2-.65-2.21-1.98-2.21-1.57 0-2.83 1.62-2.83 3.79 0 1.38.47 2.32.47 2.32l-1.89 8c-.56 2.38-.08 5.3-.04 5.59.03.17.25.21.35.08.15-.2 2.08-2.58 2.74-4.96.19-.67 1.07-4.18 1.07-4.18.53 1.01 2.07 1.9 3.71 1.9 4.88 0 8.19-4.45 8.19-10.4C24.31 5.26 20.41 2 12.2 2z"/></svg></a><a aria-label="YouTube" class="youtube" href="#" title="YouTube"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a><a aria-label="WhatsApp" class="whatsapp" href="https://wa.me/212688160034" target="_blank" rel="noopener noreferrer" title="WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zM12.2 21.7h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5H7.9c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4l-1.3-.6z"/></svg></a></div></div>
 <div><h3>Niveaux</h3><a onclick="route('TCS')">TCS</a><a onclick="route('1BAC')">1BAC</a><a onclick="route('2BAC')">2BAC</a></div>
 <div><h3>Ressources</h3><a onclick="route('Cours')">Cours</a><a onclick="route('Exercices corrigés')">Exercices corrigés</a><a onclick="route('Devoirs')">Devoirs</a><a onclick="route('Examens')">Examens</a></div>
-<div><h3>Contact</h3><a href="mailto:oddllxyz@gmail.com">oddllxyz@gmail.com</a><a class="wa-btn" href="https://wa.me/212688160034" target="_blank" rel="noopener">WhatsApp</a><a onclick="showAbout()">À propos</a><a onclick="showContact()">Contact</a></div>
-</div><div class="copy"><span>© 2026 ODLXYZ — Tous droits réservés.</span><div class="footer-mini"><a onclick="showAbout()">À propos</a><a onclick="showContact()">Contact</a></div></div>
+<div><h3>ODLXYZ</h3><a onclick="showAbout()">À propos</a><a onclick="showContact()">Contact</a><a href="mailto:oddllxyz@gmail.com">oddllxyz@gmail.com</a></div>
+</div><div class="copy"><span>© <span id="year"></span> ODLXYZ • Soutien Maths – Bac &amp; Tronc Commun</span><span class="footer-mini"><a onclick="showAbout()">À propos</a><a onclick="showContact()">Contact</a></span></div>
 </footer></div>
-<a class="floating-wa" href="https://wa.me/212688160034" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4Zm-8.4 18.2a9.7 9.7 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.5 4.8Zm5.4-7.3c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z"/></svg></a>
+<a class="floating-wa" href="https://wa.me/212688160034" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zM12.2 21.7h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5H7.9c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4l-1.3-.6z"/></svg></a>
 
 <script>
 const BLOG='https://odlxyz.blogspot.com';
@@ -389,17 +436,15 @@ function shell(inner){app.innerHTML='<section id="view"><div class="wrap"><main 
 function home(){
 closeMenu();
 app.innerHTML=`<section class="hero"><div class="wrap hero-inner"><span class="eyebrow">Soutien Maths • Bac & Tronc Commun</span><h1>Maîtrise<em>les maths</em></h1><p>Cours, exercices corrigés, devoirs et examens pour progresser en TCS, 1BAC et 2BAC.</p><div class="actions"><a class="btn" onclick="route('Cours')">Explorer les cours →</a><a class="btn alt" onclick="route('Exercices corrigés')">Exercices corrigés</a></div></div></section>
-<section class="section reveal odl-essential-motion"><div aria-hidden="true" class="odl-essential-stage">
-<div class="odl-motion-row odl-motion-left"><span>Cours</span><span>Exercices</span><span>Devoirs</span><span>Examens</span><span>TCS</span><span>1BAC</span><span>2BAC</span><span>Cours</span><span>Exercices</span><span>Devoirs</span><span>Examens</span><span>TCS</span><span>1BAC</span><span>2BAC</span></div>
-<div class="odl-motion-row odl-motion-right"><span>Fonctions</span><span>Limites</span><span>Suites</span><span>Odlxyz</span><span>Calcul</span><span>Probabilités</span><span>Fonctions</span><span>Limites</span><span>Suites</span><span>Odlxyz</span><span>Calcul</span><span>Probabilités</span></div>
-<div class="odl-motion-row odl-motion-left odl-motion-slow"><span>PDF</span><span>Sujets</span><span>Corrigés</span><span>Méthodes</span><span>Révision</span><span>Bac</span><span>PDF</span><span>Sujets</span><span>Corrigés</span><span>Méthodes</span><span>Révision</span><span>Bac</span></div>
-</div><div class="wrap odl-essential-front"><div class="section-head"><div><h2>Ressources essentielles</h2><p>Tout ce qu'il faut pour travailler efficacement.</p></div></div><div class="resources">
-<a class="resource odl-shopify-card odl-delay-1" onclick="route('Cours')"><b>Cours</b><span>Leçons structurées et méthodes.</span></a>
-<a class="resource odl-shopify-card odl-delay-2" onclick="route('Exercices corrigés')"><b>Exercices</b><span>Entraînement avec solutions détaillées.</span></a>
-<a class="resource odl-shopify-card odl-delay-3" onclick="route('Devoirs')"><b>Devoirs</b><span>Contrôles et devoirs corrigés.</span></a>
-<a class="resource odl-shopify-card odl-delay-4" onclick="route('Examens')"><b>Examens</b><span>Préparation au baccalauréat.</span></a>
+<section class="section reveal odl-essential-motion"><div class="wrap odl-essential-front">
+<div class="section-head"><div><h2>Ressources essentielles</h2><p>Tout ce qu'il faut pour travailler efficacement.</p></div></div>
+<div class="resources">
+<a class="resource odl-shopify-card odl-delay-1" onclick="route('Cours')"><b>01 — Cours</b><span>Leçons structurées et méthodes.</span></a>
+<a class="resource odl-shopify-card odl-delay-2" onclick="route('Exercices corrigés')"><b>02 — Exercices</b><span>Entraînement avec solutions détaillées.</span></a>
+<a class="resource odl-shopify-card odl-delay-3" onclick="route('Devoirs')"><b>03 — Devoirs</b><span>Contrôles et devoirs corrigés.</span></a>
+<a class="resource odl-shopify-card odl-delay-4" onclick="route('Examens')"><b>04 — Examens</b><span>Préparation au baccalauréat.</span></a>
 </div></div></section>`;
-history.replaceState({route:'home'},'',location.pathname); setTimeout(initAnimations,0);
+history.replaceState({route:'home'},'',location.pathname); setTimeout(()=>{initAnimations();initLevelCards()},0);
 scrollTo({top:0,behavior:'smooth'});
 }
 function go(label){history.pushState({route:label},'', '?odl='+encodeURIComponent(label));route(label,false)}
@@ -455,6 +500,11 @@ closeMenu();history.pushState({page:'contact'},'','?page=contact');
 shell(`<section class="odl-contact-page"><div class="odl-contact-title"><span class="ghost">CONTACT</span><h1>Contact</h1></div><div class="odl-contact-grid"><aside class="odl-contact-info"><div class="odl-contact-block"><h3>Email</h3><a href="mailto:oddllxyz@gmail.com">oddllxyz@gmail.com</a></div><div class="odl-contact-block"><h3>WhatsApp</h3><a href="https://wa.me/212688160034" rel="noopener noreferrer" target="_blank">+212 688 160 034</a></div><div class="odl-contact-block"><h3>ODLXYZ</h3><p>Soutien Maths — TCS, 1BAC & 2BAC</p></div><div class="odl-contact-social"><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07C2 17.1 5.66 21.27 10.44 22v-7.02H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.47h-1.25c-1.24 0-1.63.77-1.63 1.57v1.89h2.77l-.44 2.91h-2.33V22C18.34 21.27 22 17.1 22 12.07Z"/></svg></a><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a><a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 3 5.96 3 10.67c0 3.48 1.95 5.47 3.13 5.47.49 0 .77-1.36.77-1.75 0-.46-1.17-1.44-1.17-3.35 0-3.97 3.02-6.79 6.93-6.79 3.36 0 5.85 1.91 5.85 5.42 0 2.62-1.05 7.54-4.46 7.54-1.23 0-2.28-.89-2.28-2.16 0-1.86 1.3-3.66 1.3-5.58 0-3.26-4.62-2.67-4.62 1.27 0 .83.1 1.75.47 2.51-.68 2.93-2.08 7.29-2.08 10.31 0 .93.13 1.85.22 2.78.17.19.09.17.35.07 2.49-3.41 2.4-4.08 3.53-8.55.61 1.17 2.18 1.8 3.44 1.8 5.27 0 7.64-5.14 7.64-9.77C22 4.94 17.77 2 12 2Z"/></svg></a></div></aside><div class="odl-contact-formbox"><h2>Contactez-nous</h2><form class="odl-contact-form" id="odlContactForm"><input id="odlContactName" required type="text" placeholder="Votre nom *"><input id="odlContactEmail" required type="email" placeholder="Votre e-mail *"><input class="full" id="odlContactSubject" required type="text" placeholder="Votre sujet *"><textarea class="full" id="odlContactMessage" required placeholder="Votre message *"></textarea><button class="odl-contact-submit" type="submit">Envoyer</button><p class="odl-contact-note">Le bouton ouvre votre application e-mail avec le message préparé.</p></form></div></div></section>`);
 let f=document.getElementById('odlContactForm');if(f)f.addEventListener('submit',function(ev){ev.preventDefault();let n=odlContactName.value,e=odlContactEmail.value,su=odlContactSubject.value,msg=odlContactMessage.value,b='Nom : '+n+'\nE-mail : '+e+'\n\n'+msg,btn=f.querySelector('.odl-contact-submit');btn.classList.add('odl-sent');btn.textContent='✓ Message envoyé';setTimeout(()=>location.href='mailto:oddllxyz@gmail.com?subject='+encodeURIComponent(su)+'&body='+encodeURIComponent(b),350)});
 }
+function initLevelCards(){
+let section=document.querySelector('.odl-level-cta');if(!section)return;
+if(!('IntersectionObserver' in window)){section.classList.add('odl-levels-in');return}
+let io=new IntersectionObserver(es=>{if(es[0].isIntersecting){section.classList.add('odl-levels-in');io.disconnect()}},{threshold:.24});io.observe(section)
+}
 function initAnimations(){
 document.querySelectorAll('.reveal').forEach(el=>{let io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){el.classList.add('visible');io.disconnect()}}),{threshold:.12});io.observe(el)});
 let section=document.querySelector('.odl-essential-motion');if(section){let io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){section.classList.add('odl-resources-in');io.disconnect()}}),{threshold:.24});io.observe(section)}
@@ -465,5 +515,6 @@ window.addEventListener('popstate',()=>{let p=new URLSearchParams(location.searc
 (function init(){let p=new URLSearchParams(location.search),pg=p.get('page'),r=p.get('odl');if(pg==='about')showAbout();else if(pg==='contact')showContact();else if(r)route(r,false);else home()})();
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();</script>
 </body>
 </html>
