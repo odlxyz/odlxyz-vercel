@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ODLXYZ — Soutien Maths</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f1ec;
+      color: #111318;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    }
+
+    main {
+      width: min(1000px, 92%);
+      margin: 50px auto;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    #posts {
+      display: grid;
+      gap: 20px;
+    }
+
+    .post {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+
+    .post h2 {
+      margin-top: 0;
+    }
+
+    .post a {
+      color: #1748c9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <strong>∑ ODLXYZ</strong>
+</header>
+
+<main>
+
+  <h1>Articles Blogger</h1>
+
+  <div id="posts">
+    <div class="loading">
+      Chargement depuis Blogger...
+    </div>
+  </div>
+
+</main>
+
+<script>
+
+function afficherArticles(data) {
+
+  const container = document.getElementById("posts");
+
+  container.innerHTML = "";
+
+  const articles = data.feed.entry || [];
+
+  if (!articles.length) {
+    container.innerHTML = "<p>Aucun article trouvé.</p>";
+    return;
+  }
+
+  articles.forEach(article => {
+
+    const titre = article.title.$t;
+
+    const lien =
+      article.link.find(link => link.rel === "alternate")?.href || "#";
+
+    const resume =
+      article.summary?.$t ||
+      article.content?.$t ||
+      "";
+
+    const texte = resume
+      .replace(/<[^>]*>/g, "")
+      .substring(0, 220);
+
+    const bloc = document.createElement("article");
+
+    bloc.className = "post";
+
+    bloc.innerHTML = `
+      <h2>${titre}</h2>
+
+      <p>${texte}...</p>
+
+      <a href="${lien}">
+        Lire l'article →
+      </a>
+    `;
+
+    container.appendChild(bloc);
+  });
+}
+
+function erreurBlogger() {
+  document.getElementById("posts").innerHTML =
+    "<p>Impossible de charger les articles Blogger.</p>";
+}
+
+</script>
+
+<script
+  src="https://odlxyz.blogspot.com/feeds/posts/default?alt=json-in-script&max-results=10&callback=afficherArticles"
+  onerror="erreurBlogger()">
+</script>
+
+</body>
+</html>
