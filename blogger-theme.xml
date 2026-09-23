@@ -206,7 +206,7 @@ to{transform:translateX(0)}}
 </head>
 <body>
   <header class='header'><div class='wrap nav'>
-    <a class='brand' expr:href='data:blog.homepageUrl'><span class='mark'>&#8721;</span><span>ODLXYZ</span></a>
+    <a class='brand' expr:href='data:blog.homepageUrl'><span class='mark'>&#8721;</span><span>Odlxyz</span></a>
     <button class='mobile' onclick='document.getElementById(&quot;mainMenu&quot;).classList.toggle(&quot;open&quot;)' type='button'>&#9776;</button>
     <nav class='menu' id='mainMenu'>
       <a expr:href='data:blog.homepageUrl'>Accueil</a>
