@@ -201,26 +201,58 @@ a,[onclick]{cursor:pointer}
 .odl-contact-social svg{width:18px;height:18px}
 .floating-wa svg{width:27px;height:27px}
 
+</style>
 
-/* ===== VERCEL : ESPACE SOUS LE MENU FIXE ===== */
+<style id="vercel-layout-fixes">
+/* Ces règles restent présentes même après la synchronisation Blogger -> Vercel. */
 #view{
-  padding:300px 0 10px !important;
+  padding-top:230px !important;
+  padding-bottom:24px !important;
+}
+#view > .wrap{
+  display:block !important;
 }
 #view .mainbox{
-  position:relative;
+  width:100% !important;
+  position:relative !important;
 }
-@media(max-width:900px){
-  #view{
-    padding-top:175px !important;
-  }
+#view .odl-back-wrap{
+  display:block !important;
+  margin:0 0 22px !important;
 }
-@media(max-width:560px){
-  #view{
-    padding-top:145px !important;
-  }
+#view .odl-back-btn{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:9px !important;
+  padding:10px 16px !important;
+  border:1px solid #1677e8 !important;
+  border-radius:999px !important;
+  background:#1677e8 !important;
+  color:#fff !important;
+  font-family:inherit !important;
+  font-size:14px !important;
+  font-weight:800 !important;
+  box-shadow:0 8px 22px rgba(22,119,232,.22) !important;
+  cursor:pointer !important;
+}
+#view .odl-back-arrow{font-size:20px !important;line-height:1 !important}
+
+/* Espace supplémentaire entre le bouton/titre et les cartes */
+#view .odl-choice-head{
+  margin-bottom:34px !important;
+}
+#view .odl-branches{
+  margin-top:28px !important;
 }
 
+@media(max-width:900px){
+  #view{padding-top:175px !important}
+}
+@media(max-width:560px){
+  #view{padding-top:145px !important}
+}
 </style>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P37FJ7HG5S"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-P37FJ7HG5S');</script>
@@ -452,8 +484,20 @@ const app=document.getElementById('app');
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
 function closeMenu(){document.getElementById('mainMenu')?.classList.remove('open')}
 function shell(inner){
-app.innerHTML='<section id="view"><div class="wrap"><main class="mainbox"><div class="odl-back-wrap"><button class="odl-back-btn" type="button" onclick="history.back()"><span class="odl-back-arrow">←</span> Retour</button></div>'+inner+'</main></div></section>';
-scrollTo({top:0,behavior:'smooth'});
+  app.innerHTML=
+    '<section id="view">'+
+      '<div class="wrap">'+
+        '<main class="mainbox">'+
+          '<div class="odl-back-wrap">'+
+            '<button class="odl-back-btn" type="button" onclick="history.back()">'+
+              '<span class="odl-back-arrow">←</span> Retour'+
+            '</button>'+
+          '</div>'+
+          inner+
+        '</main>'+
+      '</div>'+
+    '</section>';
+  scrollTo({top:0,behavior:'smooth'});
 }
 function home(){
 closeMenu();
