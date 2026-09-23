@@ -2,6 +2,14 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
+
+
+
+
+<meta name="google-adsense-account" content="ca-pub-3323774838521169">
+
+
+  
   <meta content='width=device-width, initial-scale=1' name='viewport'/>
   <b:include data='blog' name='all-head-content'/>
   <title><data:view.title.escaped/></title>
