@@ -7,7 +7,7 @@
   <title><data:view.title.escaped/></title>
   <meta content='Cours de mathématiques, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC.' name='description'/>
   <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap' rel='stylesheet'/>
-  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'/>
   <b:skin><![CDATA[
 :root{--ink:#111318;--muted:#737986;--paper:#f3f1ec;--card:#fff;--line:rgba(17,19,24,.10);--accent:#1f5eff;--radius:28px;--shadow:0 18px 55px rgba(17,19,24,.10)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}.wrap{width:min(1320px,96%);margin:auto}
@@ -52,7 +52,7 @@
 .odl-contact-page{padding:34px 0 12px}.odl-contact-title{text-align:center;margin:0 0 54px;position:relative}.odl-contact-title .ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-56%);font-size:clamp(68px,11vw,150px);font-weight:300;letter-spacing:10px;color:rgba(17,19,24,.035);white-space:nowrap;pointer-events:none}.odl-contact-title h1{position:relative;display:inline-flex;align-items:center;gap:16px;margin:0;font-size:28px;letter-spacing:-.5px;text-transform:uppercase}.odl-contact-title h1:before,.odl-contact-title h1:after{content:'';width:34px;height:3px;background:#df4a46;border-radius:9px}.odl-contact-grid{display:grid;grid-template-columns:.72fr 1.48fr;gap:22px;align-items:stretch}.odl-contact-info,.odl-contact-formbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;box-shadow:0 12px 34px rgba(17,19,24,.055)}.odl-contact-info{display:flex;flex-direction:column;gap:28px}.odl-contact-block h3,.odl-contact-formbox h2{margin:0 0 8px;padding-left:11px;border-left:3px solid #df3f3a;font-size:18px;line-height:1.2}.odl-contact-block p,.odl-contact-block a{display:block;margin:5px 0 0 14px;color:#3f4650;font-size:14px}.odl-contact-block a:hover{color:#d93025}.odl-contact-social{display:flex;gap:9px;margin:2px 0 0 14px}.odl-contact-social a{width:34px;height:34px;margin:0;border-radius:7px;background:#111318;color:#fff;display:grid;place-items:center;font-size:13px;font-weight:900;transition:.25s}.odl-contact-social a:hover{transform:translateY(-3px);background:#d93025;color:#fff}.odl-contact-formbox h2{font-size:25px;margin-bottom:28px}.odl-contact-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}.odl-contact-form .full{grid-column:1/-1}.odl-contact-form input,.odl-contact-form textarea{width:100%;border:1px solid #d7d9dd;border-radius:7px;background:#fff;padding:14px 13px;font:inherit;color:#20242a;outline:none;transition:.25s}.odl-contact-form input:focus,.odl-contact-form textarea:focus{border-color:#df3f3a;box-shadow:0 0 0 3px rgba(223,63,58,.08)}.odl-contact-form textarea{min-height:130px;resize:vertical}.odl-contact-submit{grid-column:1/-1;width:max-content;border:0;border-radius:8px;background:#df3f3a;color:#fff;padding:13px 22px;font:inherit;font-weight:800;cursor:pointer;transition:.25s}.odl-contact-submit:hover{transform:translateY(-2px);background:#c92e2a;box-shadow:0 10px 24px rgba(217,48,37,.22)}.odl-contact-submit.odl-sent{background:#16a34a!important;color:#fff!important;box-shadow:0 10px 24px rgba(22,163,74,.28)!important;transform:none!important}.odl-contact-note{grid-column:1/-1;margin:0;color:var(--muted);font-size:12px}@media(max-width:850px){.odl-contact-grid{grid-template-columns:1fr}.odl-contact-title{margin-bottom:34px}}@media(max-width:560px){.odl-contact-page{padding-top:12px}.odl-contact-info,.odl-contact-formbox{padding:22px}.odl-contact-form{grid-template-columns:1fr}.odl-contact-form .full,.odl-contact-submit,.odl-contact-note{grid-column:1}.odl-contact-title .ghost{font-size:64px}}
 
 .odl-about21{padding:22px 0 30px}.odl-about21-card{position:relative;overflow:hidden;display:grid;grid-template-columns:1.02fr .98fr;gap:30px;align-items:center;min-height:560px;padding:58px;border:1px solid #e8e8f4;border-radius:30px;background:linear-gradient(135deg,#fff 0%,#fff 58%,#f5f2ff 100%);box-shadow:0 25px 70px rgba(55,43,120,.10)}.odl-about21-card:before,.odl-about21-card:after{content:'';position:absolute;border-radius:50%;background:#ece8ff;z-index:0}.odl-about21-card:before{width:150px;height:150px;right:35%;top:-85px}.odl-about21-card:after{width:80px;height:80px;left:46%;bottom:-35px}.odl-about21-copy,.odl-about21-art{position:relative;z-index:1}.odl-about21-kicker{display:flex;align-items:center;gap:12px;color:#6454e8;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}.odl-about21-kicker:before{content:'';width:46px;height:3px;border-radius:4px;background:#6454e8}.odl-about21 h1{margin:0 0 18px;font-size:clamp(50px,7vw,88px);line-height:.92;letter-spacing:-4px;color:#2f2b74;text-transform:uppercase}.odl-about21 h2{margin:0 0 16px;font-size:clamp(24px,3vw,38px);line-height:1.15;letter-spacing:-1.2px;color:#111827}.odl-about21-desc{max-width:650px;margin:0;color:#737791;font-size:16px;line-height:1.85}.odl-about21-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.odl-about21-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;background:linear-gradient(135deg,#6655f5,#4f3ce0);color:#fff!important;font-weight:900;box-shadow:0 12px 28px rgba(101,85,245,.28);transition:.25s}.odl-about21-btn:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(101,85,245,.38)}.odl-about21-features{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px}.odl-about21-feature{display:flex;align-items:center;gap:10px}.odl-about21-feature i{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#f0edff;color:#5e4ee7;font-style:normal;font-weight:900}.odl-about21-feature b{display:block;font-size:13px}.odl-about21-feature small{display:block;color:#8b8fa4;margin-top:2px}.odl-about21-art{min-height:430px;display:flex;align-items:center;justify-content:center}.odl-about21-blob{position:absolute;width:95%;height:86%;border-radius:48% 52% 45% 55% / 55% 45% 55% 45%;background:linear-gradient(145deg,#dcd7ff,#f0edff);transform:rotate(-4deg)}.odl-about21-photo{position:relative;width:90%;height:390px;object-fit:cover;border-radius:44% 56% 45% 55% / 56% 44% 56% 44%;box-shadow:0 24px 55px rgba(50,42,110,.18);border:8px solid rgba(255,255,255,.72)}.odl-about21-math{position:absolute;z-index:2;display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:#fff;box-shadow:0 12px 30px rgba(54,46,120,.14);font-size:20px;font-weight:900;color:#5d4ce6}.odl-about21-m1{left:2%;top:12%}.odl-about21-m2{right:0;top:20%;color:#e5a11a}.odl-about21-m3{right:5%;bottom:10%;color:#1fa7a0}.odl-about21-note{position:absolute;left:7%;bottom:5%;z-index:2;padding:10px 14px;border-radius:14px;background:#fff;color:#4d43b8;font-size:13px;font-weight:800;transform:rotate(-4deg);box-shadow:0 10px 25px rgba(54,46,120,.12)}@media(max-width:900px){.odl-about21-card{grid-template-columns:1fr;padding:38px 28px}.odl-about21-art{min-height:360px}.odl-about21-photo{height:330px}.odl-about21 h1{letter-spacing:-2px}}@media(max-width:560px){.odl-about21{padding-top:8px}.odl-about21-card{padding:30px 20px;border-radius:22px}.odl-about21 h1{font-size:48px}.odl-about21-art{min-height:300px}.odl-about21-photo{height:280px;width:96%}.odl-about21-features{gap:14px}.odl-about21-feature{width:100%}}
-]]>
+
 
 .odl-full-body .odl-course{max-width:900px;margin:20px auto;color:#172033;line-height:1.8}
 .odl-full-body .odl-course-header{padding:35px 25px;border-radius:24px;background:linear-gradient(135deg,#f7f9ff,#fff);box-shadow:0 12px 35px rgba(0,0,0,.08);margin-bottom:30px;text-align:center}
@@ -163,13 +163,18 @@ to{transform:translateX(0)}}
 .odl-level-cta-card b{color:#15395f}
 .odl-level-cta-card span{color:#1677e8}
 
-</b:skin>
+
+.odl-top-ad-space{width:min(1320px,96%);margin:104px auto 0;padding:12px 0 4px}
+.odl-top-ad-inner{min-height:110px;width:100%;display:flex;align-items:center;justify-content:center;border-radius:18px}
+@media(max-width:900px){.odl-top-ad-space{margin-top:92px}.odl-top-ad-inner{min-height:90px}}
+
+]]></b:skin>
 <style>
 
 .odl-level-card,.odl-card,.odl-nav-card,.odl-choice-card{
   position:relative; overflow:hidden; text-align:center;
 }
-.odl-level-card > *,.odl-card > *,.odl-nav-card > *,.odl-choice-card > *{
+.odl-level-card &gt; *,.odl-card &gt; *,.odl-nav-card &gt; *,.odl-choice-card &gt; *{
   position:relative; z-index:2;
 }
 .odl-level-card:before,.odl-card:before,.odl-nav-card:before,.odl-choice-card:before{content:none!important;display:none!important;}
@@ -201,8 +206,8 @@ to{transform:translateX(0)}}
 </head>
 <body>
   <header class='header'><div class='wrap nav'>
-    <a class='brand' expr:href='data:blog.homepageUrl'><span class='mark'>∑</span><span>ODLXYZ</span></a>
-    <button class='mobile' onclick='document.getElementById(&quot;mainMenu&quot;).classList.toggle(&quot;open&quot;)' type='button'>☰</button>
+    <a class='brand' expr:href='data:blog.homepageUrl'><span class='mark'>&#8721;</span><span>ODLXYZ</span></a>
+    <button class='mobile' onclick='document.getElementById(&quot;mainMenu&quot;).classList.toggle(&quot;open&quot;)' type='button'>&#9776;</button>
     <nav class='menu' id='mainMenu'>
       <a expr:href='data:blog.homepageUrl'>Accueil</a>
       <a expr:href='data:blog.homepageUrl + &quot;search/label/TCS&quot;'>TCS</a>
@@ -219,29 +224,723 @@ to{transform:translateX(0)}}
   <b:if cond='data:view.isHomepage'>
     <section class='hero'>
       <div class='wrap hero-inner'>
-        <span class='eyebrow'>Soutien Maths • Bac &amp; Tronc Commun</span>
+        <span class='eyebrow'>Soutien Maths &#8226; Bac &amp; Tronc Commun</span>
         <h1>Maîtrise<em>les maths</em></h1>
-        <p>Cours, exercices corrigés, devoirs et examens pour progresser en TCS, 1BAC et 2BAC. Des explications claires pour comprendre, s'entraîner et réussir.</p>
+        <p>Cours, exercices corrigés, devoirs et examens pour progresser en TCS, 1BAC et 2BAC. Des explications claires pour comprendre, s&#39;entraîner et réussir.</p>
         <div class='actions'>
-          <a class='btn' expr:href='data:blog.homepageUrl + &quot;search/label/TCS&quot;'>Explorer les cours <span class='arrow'>→</span></a>
+          <a class='btn' expr:href='data:blog.homepageUrl + &quot;search/label/TCS&quot;'>Explorer les cours <span class='arrow'>&#8594;</span></a>
           <a class='btn alt' expr:href='data:blog.homepageUrl + &quot;search/label/Exercices%20corrig%C3%A9s&quot;'>Exercices corrigés</a>
         </div>
       </div>
       <div class='scroll-note'>Scroll</div>
     </section>
 
-    <section class='section reveal odl-essential-motion'><div class='wrap odl-essential-front'><div class='section-head'><div><h2>Ressources essentielles</h2><p>Tout ce qu'il faut pour travailler efficacement.</p></div></div><div class='resources'>
-      <a class='resource odl-shopify-card odl-delay-1' expr:href='data:blog.homepageUrl + &quot;search/label/Cours&quot;'><b>01 — Cours</b><span>Leçons structurées et méthodes.</span></a>
-      <a class='resource odl-shopify-card odl-delay-2' expr:href='data:blog.homepageUrl + &quot;search/label/Exercices%20corrig%C3%A9s&quot;'><b>02 — Exercices</b><span>Entraînement avec solutions détaillées.</span></a>
-      <a class='resource odl-shopify-card odl-delay-3' expr:href='data:blog.homepageUrl + &quot;search/label/Devoirs&quot;'><b>03 — Devoirs</b><span>Contrôles et devoirs corrigés.</span></a>
-      <a class='resource odl-shopify-card odl-delay-4' expr:href='data:blog.homepageUrl + &quot;search/label/Examens&quot;'><b>04 — Examens</b><span>Préparation au baccalauréat.</span></a>
+    <section class='section reveal odl-essential-motion'><div class='wrap odl-essential-front'><div class='section-head'><div><h2>Ressources essentielles</h2><p>Tout ce qu&#39;il faut pour travailler efficacement.</p></div></div><div class='resources'>
+      <a class='resource odl-shopify-card odl-delay-1' expr:href='data:blog.homepageUrl + &quot;search/label/Cours&quot;'><b>01 &#8212; Cours</b><span>Leçons structurées et méthodes.</span></a>
+      <a class='resource odl-shopify-card odl-delay-2' expr:href='data:blog.homepageUrl + &quot;search/label/Exercices%20corrig%C3%A9s&quot;'><b>02 &#8212; Exercices</b><span>Entraînement avec solutions détaillées.</span></a>
+      <a class='resource odl-shopify-card odl-delay-3' expr:href='data:blog.homepageUrl + &quot;search/label/Devoirs&quot;'><b>03 &#8212; Devoirs</b><span>Contrôles et devoirs corrigés.</span></a>
+      <a class='resource odl-shopify-card odl-delay-4' expr:href='data:blog.homepageUrl + &quot;search/label/Examens&quot;'><b>04 &#8212; Examens</b><span>Préparation au baccalauréat.</span></a>
     </div></div></section>
 </b:if>
 
+  <b:if cond='!data:view.isHomepage'>
+    <div class='odl-top-ad-space'><div class='odl-top-ad-inner'><!-- Emplacement Google AdSense --></div></div>
+  </b:if>
+
   <section class='section reveal'><div class='wrap content-grid'>
     <main class='mainbox'>
-      <div id='odl-posts'><div class='odl-loading'>Chargement des articles…</div></div>
-      <b:section class='main' id='main' maxwidgets='1' showaddelement='no' style='display:none'><b:widget id='Blog1' locked='true' title='Articles du blog' type='Blog' version='2' visible='false'/></b:section>
+      <div id='odl-posts'><div class='odl-loading'>Chargement des articles&#8230;</div></div>
+      <b:section class='main' id='main' maxwidgets='1' showaddelement='no' style='display:none'>
+        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='false'>
+          <b:widget-settings>
+            <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+            <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+            <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+            <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+            <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+            <b:widget-setting name='showAuthor'>false</b:widget-setting>
+            <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+            <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+            <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+            <b:widget-setting name='timestampLabel'/>
+            <b:widget-setting name='reactionsLabel'/>
+            <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+            <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+            <b:widget-setting name='showLabels'>true</b:widget-setting>
+            <b:widget-setting name='showLocation'>true</b:widget-setting>
+            <b:widget-setting name='postLabelsLabel'/>
+            <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+            <b:widget-setting name='postsPerAd'>3</b:widget-setting>
+            <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+            <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+            <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+            <b:widget-setting name='showReactions'>false</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main' var='this'>
+  <div class='blog-posts hfeed container'>
+    <b:loop index='i' values='data:posts' var='post'>
+      <b:include data='post' name='postCommentsAndAd'/>
+    </b:loop>
+  </div>
+  <b:include cond='data:view.isMultipleItems' name='postPagination'/>
+  <b:include name='feedLinks'/>
+  <b:if cond='data:blog.isGoogleEverywhereLinkTooltipEnabled'>
+    <b:include name='tooltipCss'/>
+  </b:if>
+</b:includable>
+          <b:includable id='aboutPostAuthor'>
+  <div class='author-name'>
+    <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+      <span>
+        <data:post.author.name/>
+      </span>
+    </a>
+  </div>
+  <div>
+    <span class='author-desc'>
+      <data:post.author.aboutMe/>
+    </span>
+  </div>
+</b:includable>
+          <b:includable id='addComments'>
+  <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+    <b:message name='messages.postAComment'/>
+  </a>
+</b:includable>
+          <b:includable id='blogThisShare'>
+  <b:with value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
+</b:includable>
+          <b:includable id='bylineByName' var='byline'>
+  <b:switch var='data:byline.name'>
+  <b:case value='share'/>
+    <b:include cond='data:post.shareUrl' name='postShareButtons'/>
+  <b:case value='comments'/>
+    <b:include cond='data:post.allowComments' name='postCommentsLink'/>
+  <b:case value='location'/>
+    <b:include cond='data:post.location' name='postLocation'/>
+  <b:case value='timestamp'/>
+    <b:include cond='not data:view.isPage' name='postTimestamp'/>
+  <b:case value='author'/>
+    <b:include name='postAuthor'/>
+  <b:case value='labels'/>
+    <b:include cond='data:post.labels' name='postLabels'/>
+  <b:case value='icons'/>
+    <b:include cond='data:post.emailPostUrl' name='emailPostIcon'/>
+  </b:switch>
+</b:includable>
+          <b:includable id='bylineRegion' var='regionItems'>
+  <b:loop values='data:regionItems' var='byline'>
+    <b:include data='byline' name='bylineByName'/>
+  </b:loop>
+</b:includable>
+          <b:includable id='commentAuthorAvatar'>
+  <div class='avatar-image-container'>
+    <img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/>
+  </div>
+</b:includable>
+          <b:includable id='commentDeleteIcon' var='comment'>
+  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+    <b:if cond='data:showCmtPopup'>
+      <div class='goog-toggle-button'>
+        <div class='goog-inline-block comment-action-icon'/>
+      </div>
+    <b:else/>
+      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
+        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
+          <b:includable id='commentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+          <b:includable id='commentFormIframeSrc' var='post'>
+  <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+</b:includable>
+          <b:includable id='commentItem' var='comment'>
+  <div class='comment' expr:id='&quot;c&quot; + data:comment.id'>
+    <b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar'/>
+
+    <div class='comment-block'>
+      <div class='comment-author'>
+        <b:if cond='data:comment.authorUrl'>
+          <b:message name='messages.authorSaidWithLink'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+            <b:param expr:value='data:comment.authorUrl' name='authorUrl'/>
+          </b:message>
+        <b:else/>
+          <b:message name='messages.authorSaid'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+          </b:message>
+        </b:if>
+      </div>
+      <div expr:class='&quot;comment-body&quot; + (data:comment.isDeleted ? &quot; deleted&quot; : &quot;&quot;)'>
+        <data:comment.body/>
+      </div>
+      <div class='comment-footer'>
+        <span class='comment-timestamp'>
+          <a expr:href='data:comment.url' title='comment permalink'>
+            <data:comment.timestamp/>
+          </a>
+          <b:include data='comment' name='commentDeleteIcon'/>
+        </span>
+      </div>
+    </div>
+  </div>
+</b:includable>
+          <b:includable id='commentList' var='comments'>
+  <div id='comments-block'>
+    <b:loop values='data:comments' var='comment'>
+      <b:include data='comment' name='commentItem'/>
+    </b:loop>
+  </div>
+</b:includable>
+          <b:includable id='commentPicker' var='post'>
+  <b:if cond='data:post.showThreadedComments'>
+    <b:include data='post' name='threadedComments'/>
+  <b:else/>
+    <b:include data='post' name='comments'/>
+  </b:if>
+</b:includable>
+          <b:includable id='comments' var='post'>
+  <section expr:class='&quot;comments&quot; + (data:post.embedCommentForm ? &quot; embed&quot; : &quot;&quot;)' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+    <b:if cond='data:post.allowComments'>
+
+      <b:include name='commentsTitle'/>
+
+      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+        <b:include cond='data:post.comments' data='post.comments' name='commentList'/>
+      </div>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <div class='paging-control-container'>
+          <b:if cond='data:post.hasOlderLinks'>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+              <data:messages.oldest/>
+            </a>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+              <data:messages.older/>
+            </a>
+          </b:if>
+
+          <span class='comment-range-text'>
+            <data:post.commentRangeText/>
+          </span>
+
+          <b:if cond='data:post.hasNewerLinks'>
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+              <data:messages.newer/>
+            </a>
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+              <data:messages.newest/>
+            </a>
+          </b:if>
+        </div>
+      </b:if>
+
+      <div class='footer'>
+        <b:if cond='data:post.embedCommentForm'>
+          <b:if cond='data:post.allowNewComments'>
+            <b:include data='post' name='commentForm'/>
+          <b:else/>
+            <data:post.noNewCommentsText/>
+          </b:if>
+        <b:else/>
+          <b:if cond='data:post.allowComments'>
+            <b:include data='post' name='addComments'/>
+          </b:if>
+        </b:if>
+      </div>
+    </b:if>
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+</b:includable>
+          <b:includable id='commentsLink'>
+  <a class='comment-link' expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+    <b:if cond='data:post.numberOfComments &gt; 0'>
+      <b:message name='messages.numberOfComments'>
+        <b:param expr:value='data:post.numberOfComments' name='numComments'/>
+      </b:message>
+    <b:else/>
+      <data:messages.postAComment/>
+    </b:if>
+  </a>
+</b:includable>
+          <b:includable id='commentsLinkIframe'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+          <b:includable id='commentsTitle'>
+  <h3 class='title'><data:messages.comments/></h3>
+</b:includable>
+          <b:includable id='defaultAdUnit'>
+  <ins class='adsbygoogle' data-ad-format='auto' expr:data-ad-client='data:adClientId ?: data:blog.adsenseClientId' expr:data-ad-host='data:blog.adsenseHostId' expr:style='data:style ?: &quot;display: block;&quot;'>
+    <b:attr cond='not data:blog.analytics4' expr:value='data:blog.analyticsAccountNumber' name='data-analytics-uacct'/>
+  </ins>
+  <script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</b:includable>
+          <b:includable id='emailPostIcon'>
+  <span class='byline post-icons'>
+    <!-- email post links -->
+    <span class='item-action'>
+      <a expr:href='data:post.emailPostUrl' expr:title='data:messages.emailPost'>
+        <b:include data='{ iconClass: &quot;touch-icon sharing-icon&quot; }' name='emailIcon'/>
+      </a>
+    </span>
+  </span>
+</b:includable>
+          <b:includable id='facebookShare'>
+  <b:with value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
+</b:includable>
+          <b:includable id='feedLinks'>
+  <b:if cond='!data:view.isPost'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+  <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.allowComments and data:post.feedLinks'>
+          <b:include data='post.feedLinks' name='feedLinksBody'/>
+        </b:if>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+          <b:includable id='feedLinksBody' var='links'>
+  <div class='feed-links'>
+  <data:messages.subscribeTo/>
+  <b:loop values='data:links' var='f'>
+     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+  </b:loop>
+  </div>
+</b:includable>
+          <b:includable id='footerBylines'>
+  <b:if cond='data:widgets.Blog.first.footerBylines'>
+    <b:loop index='i' values='data:widgets.Blog.first.footerBylines' var='region'>
+      <b:if cond='not data:region.items.empty'>
+        <div expr:class='&quot;post-footer-line post-footer-line-&quot; + (data:i + 1)'>
+          <b:with value='&quot;footer-&quot; + (data:i + 1)' var='regionName'>
+            <b:include data='region.items' name='bylineRegion'/>
+          </b:with>
+        </div>
+      </b:if>
+    </b:loop>
+  </b:if>
+</b:includable>
+          <b:includable id='googlePlusShare'>
+</b:includable>
+          <b:includable id='headerByline'>
+  <b:if cond='data:widgets.Blog.first.headerByline'>
+    <div class='post-header'>
+      <div class='post-header-line-1'>
+        <b:with value='&quot;header-1&quot;' var='regionName'>
+          <b:include data='data:widgets.Blog.first.headerByline.items' name='bylineRegion'/>
+        </b:with>
+      </div>
+    </div>
+  </b:if>
+</b:includable>
+          <b:includable id='homePageLink'>
+  <a class='home-link' expr:href='data:blog.homepageUrl'>
+    <data:messages.home/>
+  </a>
+</b:includable>
+          <b:includable id='iframeComments' var='post'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+          <b:includable id='inlineAd' var='post'>
+  <b:if cond='!data:view.isPreview'>
+    <b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'>
+      <!-- Ad -->
+      <div class='inline-ad'>
+        <b:if cond='data:this.adCode != &quot;&quot;'>
+          <data:this.adCode/>
+        <b:else/>
+          <b:include cond='data:this.adClientId or data:blog.adsenseClientId' name='defaultAdUnit'/>
+        </b:if>
+      </div>
+    </b:if>
+  <b:else/>
+    <div class='inline-ad'>
+      <div class='inline-ad-placeholder'>
+        <span><b:message name='messages.adsGoHere'/></span>
+      </div>
+    </div>
+  </b:if>
+</b:includable>
+          <b:includable id='linkShare'>
+  <b:with value='&quot;window.prompt(\&quot;Copy to clipboard: Ctrl+C, Enter\&quot;, \&quot;&quot; + data:originalUrl + &quot;\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
+</b:includable>
+          <b:includable id='nextPageLink'>
+  <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:messages.olderPosts'>
+    <data:messages.olderPosts/>
+  </a>
+</b:includable>
+          <b:includable id='otherSharingButton'>
+  <span class='sharing-platform-button sharing-element-other' expr:aria-label='data:messages.shareToOtherApps.escaped' expr:data-url='data:originalUrl' expr:title='data:messages.shareToOtherApps.escaped' role='menuitem' tabindex='-1'>
+    <b:with value='{key: &quot;sharingOther&quot;}' var='platform'>
+      <b:include name='sharingPlatformIcon'/>
+    </b:with>
+    <span class='platform-sharing-text'><data:messages.shareOtherApps.escaped/></span>
+  </span>
+</b:includable>
+          <b:includable id='platformShare'>
+  <a expr:class='&quot;goog-inline-block sharing-&quot; + data:platform.key' expr:data-url='data:originalUrl' expr:href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:onclick='data:onclick ? data:onclick : &quot;&quot;' expr:title='data:platform.shareMessage' target='_blank'>
+    <span class='share-button-link-text'>
+      <data:platform.shareMessage/>
+    </span>
+  </a>
+</b:includable>
+          <b:includable id='post' var='post'>
+  <div class='post'>
+    <b:include data='post' name='postMeta'/>
+    <b:include data='post' name='postTitle'/>
+    <b:include name='headerByline'/>
+    <b:if cond='data:view.isSingleItem'>
+      <b:include data='post' name='postBody'/>
+    <b:else/>
+      <b:include data='post' name='postBodySnippet'/>
+      <b:include data='post' name='postJumpLink'/>
+    </b:if>
+    <b:include data='post' name='postFooter'/>
+  </div>
+</b:includable>
+          <b:includable id='postAuthor'>
+  <span class='byline post-author vcard'>
+    <span class='post-author-label'>
+      <data:byline.label/>
+    </span>
+    <span class='fn'>
+      <b:if cond='data:post.author.profileUrl'>
+        <meta expr:content='data:post.author.profileUrl'/>
+        <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+          <span><data:post.author.name/></span>
+        </a>
+      <b:else/>
+        <span><data:post.author.name/></span>
+      </b:if>
+    </span>
+  </span>
+</b:includable>
+          <b:includable id='postBody' var='post'>
+  <!-- If metaDescription is empty, use the post body as the schema.org description too, for G+/FB snippeting. -->
+  <div class='post-body entry-content float-container' expr:id='&quot;post-body-&quot; + data:post.id'>
+    <data:post.body/>
+  </div>
+</b:includable>
+          <b:includable id='postBodySnippet' var='post'>
+  <b:include data='post' name='postBody'/>
+</b:includable>
+          <b:includable id='postCommentsAndAd' var='post'>
+  <article class='post-outer-container'>
+    <!-- Post title and body -->
+    <div class='post-outer'>
+      <b:include data='post' name='post'/>
+    </div>
+
+    <!-- Comments -->
+    <b:include cond='data:view.isSingleItem' data='post' name='commentPicker'/>
+
+    <!-- Show ad inside post container, after comments, if single item. -->
+    <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/>
+  </article>
+
+  <!-- Show ad outside post container (between posts) for feed pages. -->
+  <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/>
+</b:includable>
+          <b:includable id='postCommentsLink'>
+  <b:if cond='data:view.isMultipleItems'>
+    <span class='byline post-comment-link container'>
+      <b:include cond='data:post.commentSource != 1' name='commentsLink'/>
+    </span>
+  </b:if>
+</b:includable>
+          <b:includable id='postFooter' var='post'>
+  <div class='post-footer'>
+    <b:include name='footerBylines'/>
+    <b:include data='post' name='postFooterAuthorProfile'/>
+  </div>
+</b:includable>
+          <b:includable id='postFooterAuthorProfile' var='post'>
+  <b:if cond='data:post.author.aboutMe and data:view.isPost'>
+    <div class='author-profile'>
+      <b:if cond='data:post.author.authorPhoto.url'>
+        <img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/>
+        <div class='author-about'>
+          <b:include data='post' name='aboutPostAuthor'/>
+        </div>
+      <b:else/>
+        <b:include data='post' name='aboutPostAuthor'/>
+      </b:if>
+    </div>
+  </b:if>
+</b:includable>
+          <b:includable id='postHeader' var='post'>
+  <b:include name='headerByline'/>
+</b:includable>
+          <b:includable id='postJumpLink' var='post'>
+  <div class='jump-link flat-button'>
+    <a expr:href='data:post.url fragment &quot;more&quot;' expr:title='data:post.title'>
+      <b:eval expr='data:blog.jumpLinkMessage'/>
+    </a>
+  </div>
+</b:includable>
+          <b:includable id='postLabels'>
+  <span class='byline post-labels'>
+    <span class='byline-label'><data:byline.label/></span>
+    <b:loop index='i' values='data:post.labels' var='label'>
+      <a expr:href='data:label.url' rel='tag'>
+        <data:label.name/>
+      </a>
+    </b:loop>
+  </span>
+</b:includable>
+          <b:includable id='postLocation'>
+  <span class='byline post-location'>
+    <data:byline.label/>
+    <a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
+  </span>
+</b:includable>
+          <b:includable id='postMeta' var='post'>
+  <b:include data='post' name='postMetadataJSON'/>
+</b:includable>
+          <b:includable id='postMetadataJSONImage'>
+  &quot;image&quot;: {
+    &quot;@type&quot;: &quot;ImageObject&quot;,
+    <b:if cond='data:post.featuredImage.isResizable'>
+    &quot;url&quot;: &quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;)'/>&quot;,
+    &quot;height&quot;: 630,
+    &quot;width&quot;: 1200
+    <b:else/>
+    &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/&quot;,
+    &quot;height&quot;: 348,
+    &quot;width&quot;: 1200
+    </b:if>
+  },
+</b:includable>
+          <b:includable id='postMetadataJSONPublisher'>
+ &quot;publisher&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;Blogger&quot;,
+    &quot;logo&quot;: {
+      &quot;@type&quot;: &quot;ImageObject&quot;,
+      &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/h60/&quot;,
+      &quot;width&quot;: 206,
+      &quot;height&quot;: 60
+    }
+  },
+</b:includable>
+          <b:includable id='postPagination'>
+  <div class='blog-pager container' id='blog-pager'>
+    <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+    <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+    <b:include cond='data:view.url != data:blog.homepageUrl' name='homePageLink'/>
+  </div>
+</b:includable>
+          <b:includable id='postReactions'>
+  <!-- Reaction feature no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+          <b:includable id='postShareButtons'>
+  <div class='byline post-share-buttons goog-inline-block'>
+    <b:with value='data:sharingId ?: ((data:widget.instanceId ?: &quot;sharing&quot;) + &quot;-&quot; + (data:regionName ?: &quot;byline&quot;) + &quot;-&quot; + data:post.id)' var='sharingId'>
+      <!-- Note: 'sharingButtons' includable is from the default Sharing widget markup. -->
+      <b:include data='{                                                sharingId: data:sharingId,                                                originalUrl: data:post.url,                                                platforms: data:this.sharing.platforms,                                                shareUrl: data:post.shareUrl,                                                shareTitle: data:post.title,                                              }' name='sharingButtons'/>
+    </b:with>
+  </div>
+</b:includable>
+          <b:includable id='postTimestamp'>
+  <span class='byline post-timestamp'>
+    <data:byline.label/>
+    <b:if cond='data:post.url'>
+      <meta expr:content='data:post.url.canonical'/>
+      <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
+        <time class='published' expr:datetime='data:post.date.iso8601' expr:title='data:post.date.iso8601'>
+          <data:post.date/>
+        </time>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
+          <b:includable id='postTitle' var='post'>
+  <a expr:name='data:post.id'/>
+  <b:if cond='data:post.title != &quot;&quot;'>
+    <h3 class='post-title entry-title'>
+      <b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
+        <a expr:href='data:post.link ?: data:post.url'><data:post.title/></a>
+      <b:else/>
+        <data:post.title/>
+      </b:if>
+    </h3>
+  </b:if>
+</b:includable>
+          <b:includable id='previousPageLink'>
+  <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:messages.newerPosts'>
+    <data:messages.newerPosts/>
+  </a>
+</b:includable>
+          <b:includable id='sharingButton'>
+  <span expr:aria-label='data:platform.shareMessage' expr:class='&quot;sharing-platform-button sharing-element-&quot; + data:platform.key' expr:data-href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:data-url='data:originalUrl' expr:title='data:platform.shareMessage' role='menuitem' tabindex='-1'>
+    <b:include name='sharingPlatformIcon'/>
+    <span class='platform-sharing-text'><data:platform.name/></span>
+  </span>
+</b:includable>
+          <b:includable id='sharingButtonContent'>
+  <div class='flat-icon-button ripple'>
+    <b:include name='shareIcon'/>
+  </div>
+</b:includable>
+          <b:includable id='sharingButtons'>
+  <div class='sharing' expr:aria-owns='&quot;sharing-popup-&quot; + data:sharingId' expr:data-title='data:shareTitle'>
+    <button class='sharing-button touch-icon-button' expr:aria-controls='&quot;sharing-popup-&quot; + data:sharingId' expr:aria-label='data:messages.share.escaped' expr:id='&quot;sharing-button-&quot; + data:sharingId' role='button'>
+      <b:include name='sharingButtonContent'/>
+    </button>
+    <b:include name='sharingButtonsMenu'/>
+  </div>
+</b:includable>
+          <b:includable id='sharingButtonsMenu'>
+  <div class='share-buttons-container'>
+    <ul aria-hidden='true' class='share-buttons hidden' expr:aria-label='data:messages.share.escaped' expr:id='&quot;sharing-popup-&quot; + data:sharingId' role='menu'>
+      <b:loop values='(data:platforms ?: data:blog.sharing.platforms) filter (p =&gt; p.key not in {&quot;blogThis&quot;})' var='platform'>
+        <li>
+          <b:include name='sharingButton'/>
+        </li>
+      </b:loop>
+      <li aria-hidden='true' class='hidden'>
+        <b:include name='otherSharingButton'/>
+      </li>
+    </ul>
+  </div>
+</b:includable>
+          <b:includable id='sharingPlatformIcon'>
+  <b:include data='{ iconClass: (&quot;touch-icon sharing-&quot; + data:platform.key) }' expr:name='data:platform.key + &quot;Icon&quot;'/>
+</b:includable>
+          <b:includable id='threadedCommentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+          <b:includable id='threadedCommentJs' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+  <b:template-script inline='true' name='threaded_comments'/>
+  <script type='text/javascript'>
+    blogger.widgets.blog.initThreadedComments(
+        <data:post.commentJso/>,
+        <data:post.commentMsgs/>,
+        <data:post.commentConfig/>);
+  </script>
+</b:includable>
+          <b:includable id='threadedComments' var='post'>
+  <section class='comments threaded' expr:data-embed='data:post.embedCommentForm' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+
+    <b:include name='commentsTitle'/>
+
+    <div class='comments-content'>
+      <b:if cond='data:post.embedCommentForm'>
+        <b:include data='post' name='threadedCommentJs'/>
+      </b:if>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threadedCommentForm'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+      <b:if cond='data:post.showManageComments'>
+        <b:include data='post' name='manageComments'/>
+      </b:if>
+    </p>
+
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+</b:includable>
+          <b:includable id='tooltipCss'>
+  <!-- LINT.IfChange -->
+  <style>
+    .post-body a.b-tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip {
+      display: block !important;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-20%, 1px);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip iframe {
+      width: 200px;
+      height: 198px;
+      max-width: none;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (hover: hover) {
+      .post-body a.b-tooltip-container:hover .b-tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  </style>
+  <!-- LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
+</b:includable>
+        </b:widget>
+      </b:section>
     </main>
     <aside>
       <div class='sidebox'><h3>Rechercher</h3><form expr:action='data:blog.homepageUrl + &quot;search&quot;' method='get'><input name='q' placeholder='Ex. fonctions, limites...' style='width:100%;padding:12px;border:1px solid #dce3ee;border-radius:10px' type='text'/></form></div>
@@ -253,19 +952,19 @@ to{transform:translateX(0)}}
     <section class='odl-level-cta reveal'><div class='wrap'>
       <div class='odl-level-cta-head'><span>PARCOURS</span><h2>Choisis ton niveau</h2><p>Accède directement aux ressources de ton niveau.</p></div>
       <div class='odl-level-cta-grid'>
-        <a class='odl-level-cta-card odl-level-anim odl-level-delay-1' expr:href='data:blog.homepageUrl + &quot;search/label/TCS&quot;'><small>NIVEAU</small><b>TCS</b><span>→</span></a>
-        <a class='odl-level-cta-card odl-level-anim odl-level-delay-2' expr:href='data:blog.homepageUrl + &quot;search/label/1BAC&quot;'><small>NIVEAU</small><b>1BAC</b><span>→</span></a>
-        <a class='odl-level-cta-card odl-level-anim odl-level-delay-3' expr:href='data:blog.homepageUrl + &quot;search/label/2BAC&quot;'><small>NIVEAU</small><b>2BAC</b><span>→</span></a>
+        <a class='odl-level-cta-card odl-level-anim odl-level-delay-1' expr:href='data:blog.homepageUrl + &quot;search/label/TCS&quot;'><small>NIVEAU</small><b>TCS</b><span>&#8594;</span></a>
+        <a class='odl-level-cta-card odl-level-anim odl-level-delay-2' expr:href='data:blog.homepageUrl + &quot;search/label/1BAC&quot;'><small>NIVEAU</small><b>1BAC</b><span>&#8594;</span></a>
+        <a class='odl-level-cta-card odl-level-anim odl-level-delay-3' expr:href='data:blog.homepageUrl + &quot;search/label/2BAC&quot;'><small>NIVEAU</small><b>2BAC</b><span>&#8594;</span></a>
       </div>
     </div></section>
   </b:if>
 
   <div class='footer-shell'><footer class='footer'><div class='footer-grid'>
-    <div><h3 class='footer-brand'>ODLXYZ</h3><p>Soutien Maths – Bac &amp; Tronc Commun. Cours, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC.</p><div class='socials'><a aria-label='Facebook' class='facebook' href='#' title='Facebook'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.25 10.44 22v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22C18.34 21.25 22 17.08 22 12.06z'/></svg></a><a aria-label='Instagram' class='instagram' href='#' title='Instagram'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z'/></svg></a><a aria-label='Pinterest' class='pinterest' href='#' title='Pinterest'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M12.2 2C6.7 2 4 5.94 4 9.23c0 2.5.95 4.72 2.98 5.55.33.14.63.01.73-.36.07-.25.23-.9.3-1.17.1-.36.06-.49-.2-.8-.59-.7-.96-1.6-.96-2.88 0-3.71 2.78-7.03 7.23-7.03 3.94 0 6.11 2.41 6.11 5.63 0 4.23-1.87 7.8-4.65 7.8-1.54 0-2.69-1.27-2.32-2.83.44-1.86 1.3-3.87 1.3-5.22 0-1.2-.65-2.21-1.98-2.21-1.57 0-2.83 1.62-2.83 3.79 0 1.38.47 2.32.47 2.32l-1.89 8c-.56 2.38-.08 5.3-.04 5.59.03.17.25.21.35.08.15-.2 2.08-2.58 2.74-4.96.19-.67 1.07-4.18 1.07-4.18.53 1.01 2.07 1.9 3.71 1.9 4.88 0 8.19-4.45 8.19-10.4C24.31 5.26 20.41 2 12.2 2z'/></svg></a><a aria-label='YouTube' class='youtube' href='#' title='YouTube'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z'/></svg></a><a aria-label='WhatsApp' class='whatsapp' href='https://wa.me/212688160034' rel='noopener noreferrer' target='_blank' title='WhatsApp'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zM12.2 21.7h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5H7.9c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4l-1.3-.6z'/></svg></a></div></div>
+    <div><h3 class='footer-brand'>ODLXYZ</h3><p>Soutien Maths &#8211; Bac &amp; Tronc Commun. Cours, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC.</p><div class='socials'><a aria-label='Facebook' class='facebook' href='#' title='Facebook'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.25 10.44 22v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22C18.34 21.25 22 17.08 22 12.06z'/></svg></a><a aria-label='Instagram' class='instagram' href='#' title='Instagram'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z'/></svg></a><a aria-label='Pinterest' class='pinterest' href='#' title='Pinterest'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M12.2 2C6.7 2 4 5.94 4 9.23c0 2.5.95 4.72 2.98 5.55.33.14.63.01.73-.36.07-.25.23-.9.3-1.17.1-.36.06-.49-.2-.8-.59-.7-.96-1.6-.96-2.88 0-3.71 2.78-7.03 7.23-7.03 3.94 0 6.11 2.41 6.11 5.63 0 4.23-1.87 7.8-4.65 7.8-1.54 0-2.69-1.27-2.32-2.83.44-1.86 1.3-3.87 1.3-5.22 0-1.2-.65-2.21-1.98-2.21-1.57 0-2.83 1.62-2.83 3.79 0 1.38.47 2.32.47 2.32l-1.89 8c-.56 2.38-.08 5.3-.04 5.59.03.17.25.21.35.08.15-.2 2.08-2.58 2.74-4.96.19-.67 1.07-4.18 1.07-4.18.53 1.01 2.07 1.9 3.71 1.9 4.88 0 8.19-4.45 8.19-10.4C24.31 5.26 20.41 2 12.2 2z'/></svg></a><a aria-label='YouTube' class='youtube' href='#' title='YouTube'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z'/></svg></a><a aria-label='WhatsApp' class='whatsapp' href='https://wa.me/212688160034' rel='noopener noreferrer' target='_blank' title='WhatsApp'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zM12.2 21.7h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5H7.9c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4l-1.3-.6z'/></svg></a></div></div>
     <div><h3>Niveaux</h3><a expr:href='data:blog.homepageUrl + &quot;search/label/TCS&quot;'>TCS</a><a expr:href='data:blog.homepageUrl + &quot;search/label/1BAC&quot;'>1BAC</a><a expr:href='data:blog.homepageUrl + &quot;search/label/2BAC&quot;'>2BAC</a></div>
     <div><h3>Ressources</h3><a expr:href='data:blog.homepageUrl + &quot;search/label/Cours&quot;'>Cours</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Exercices%20corrig%C3%A9s&quot;'>Exercices corrigés</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Devoirs&quot;'>Devoirs</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Examens&quot;'>Examens</a></div>
     <div><h3>ODLXYZ</h3><a expr:href='data:blog.homepageUrl + &quot;p/a-propos_01096242198.html&quot;'>À propos</a><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a><a href='mailto:oddllxyz@gmail.com'>oddllxyz@gmail.com</a></div>
-  </div><div class='copy'><span>© <script>document.write(new Date().getFullYear());</script> ODLXYZ • Soutien Maths – Bac &amp; Tronc Commun</span><span class='footer-mini'><a expr:href='data:blog.homepageUrl + &quot;p/a-propos_01096242198.html&quot;'>À propos</a><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a></span></div></footer></div>
+  </div><div class='copy'><span>&#169; <script>document.write(new Date().getFullYear());</script> ODLXYZ &#8226; Soutien Maths &#8211; Bac &amp; Tronc Commun</span><span class='footer-mini'><a expr:href='data:blog.homepageUrl + &quot;p/a-propos_01096242198.html&quot;'>À propos</a><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a></span></div></footer></div>
   <a aria-label='WhatsApp' class='floating-wa' href='https://wa.me/212688160034' rel='noopener noreferrer' target='_blank' title='WhatsApp ODLXYZ'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zM12.2 21.7h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5H7.9c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4l-1.3-.6z'/></svg></a>
 
   <script type='text/javascript'>
