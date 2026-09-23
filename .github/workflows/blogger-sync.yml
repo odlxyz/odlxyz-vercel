@@ -1,0 +1,37 @@
+name: Blogger XML to Vercel
+
+on:
+  push:
+    paths:
+      - "blogger-theme.xml"
+      - "vercel-shell.html"
+      - "scripts/convert_blogger.py"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Télécharger le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Convertir Blogger XML vers HTML
+        run: python scripts/convert_blogger.py blogger-theme.xml index.html
+
+      - name: Mettre à jour index.html
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Auto-update Vercel from Blogger XML"
+          git push
