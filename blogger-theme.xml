@@ -2,15 +2,10 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
-
-
-
-  
-
-  
   <meta content='width=device-width, initial-scale=1' name='viewport'/>
   <b:include data='blog' name='all-head-content'/>
-  <title><data:view.title.escaped/></title>
+  <!-- Favicon géré par Blogger. Ne pas intégrer de favicon Base64 ici. -->
+<title><data:view.title.escaped/></title>
   <meta content='Cours de mathématiques, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC.' name='description'/>
   <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap' rel='stylesheet'/>
   <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'/>
@@ -51,6 +46,14 @@
 @media(max-width:1000px){.prefooter-grid{grid-template-columns:1fr}.about-prof{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.prefooter-info{padding-top:50px}.about-prof{grid-template-columns:1fr}.prof-photo{min-height:330px}.about-copy,.contact-card{padding:28px}.footer-shell{padding-top:8px}}
 
+.odl-feed-title{margin-bottom:26px}
+.odl-article-choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.odl-article-choice{display:flex;flex-direction:column;gap:10px;min-width:0}
+.odl-article-choice-label{font-size:14px;font-weight:900;letter-spacing:.8px;text-transform:none;color:#1677e8;text-align:center}
+.odl-article-choice-card{min-height:150px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;border:2px solid #d9e0ea;border-radius:20px;background:#fff;color:#111318;text-decoration:none;box-shadow:0 10px 28px rgba(17,19,24,.06);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.odl-article-choice-card:hover{transform:translateY(-4px);border-color:#1677e8;box-shadow:0 16px 36px rgba(22,119,232,.15)}
+.odl-article-choice-card h2{margin:0!important;font-size:22px!important;line-height:1.3;font-weight:850;color:#111318}
+@media(max-width:900px){.odl-article-choice-grid{grid-template-columns:1fr;gap:16px}.odl-article-choice-card{min-height:105px;padding:20px}.odl-article-choice-card h2{font-size:20px!important}.odl-article-choice-label{text-align:left;padding-left:4px}}
 .odl-feed-title{font-size:34px;line-height:1.1;margin:0 0 26px;letter-spacing:-1.5px}.odl-post-card{padding:0 0 28px;margin:0 0 28px;border-bottom:1px solid var(--line)}.odl-post-card:last-child{border-bottom:0;margin-bottom:0}.odl-post-card h2{font-size:28px;line-height:1.2;margin:0 0 10px}.odl-post-card h2 a:hover{color:var(--accent)}.odl-meta{font-size:13px;color:var(--muted);margin-bottom:14px}.odl-snippet{color:#555;line-height:1.75}.odl-read{display:inline-flex;margin-top:14px;font-weight:800;color:#1748c9}.odl-empty,.odl-loading{padding:55px 20px;text-align:center;color:var(--muted);font-weight:700}.odl-thumb{width:100%;max-height:360px;object-fit:cover;border-radius:18px;margin:0 0 18px}.odl-full-post h1{font-size:38px;line-height:1.12;margin:0 0 10px;letter-spacing:-1.5px}.odl-full-body{font-size:17px;line-height:1.8;color:#333}.odl-full-body img{border-radius:16px;margin:16px 0}.odl-full-body iframe{max-width:100%}.odl-full-body pre{overflow:auto}.odl-full-body a{color:#1748c9;text-decoration:underline}.odl-back{display:inline-flex;margin-bottom:22px;font-weight:800;color:#1748c9}
 
 .odl-choice-head{margin-bottom:26px}.odl-choice-head h1{font-size:clamp(34px,5vw,58px);line-height:1;margin:0 0 10px;letter-spacing:-2px}.odl-choice-head p{color:var(--muted);margin:0}.odl-branches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.odl-branch{background:#f8f8f7;border:1px solid var(--line);border-radius:24px;padding:28px;min-height:180px;position:relative;overflow:hidden;transition:.3s}.odl-branch:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.odl-branch:after{display:none}.odl-branch-arrow{position:absolute;right:24px;bottom:20px;font-size:28px;line-height:1;font-weight:700}.odl-branch small{font-weight:900;letter-spacing:2px;color:var(--muted)}.odl-branch h2{font-size:28px;margin:28px 0 0}.odl-chapter-list{position:relative;padding-left:28px}.odl-chapter-list:before{content:'';position:absolute;left:17px;top:30px;bottom:30px;width:2px;background:#e4e4e4}.odl-chapter{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:0 0 18px;box-shadow:0 8px 22px rgba(17,19,24,.06);transition:.25s}.odl-chapter:hover{transform:translateX(4px);box-shadow:0 14px 30px rgba(17,19,24,.10)}.odl-num{position:absolute;left:-48px;top:16px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#d93025;color:#fff;font-size:18px;font-weight:900;box-shadow:0 6px 14px rgba(217,48,37,.25)}.odl-chapter h2{font-size:25px;line-height:1.2;margin:0 0 12px;color:#2c4057}.odl-resource-links{display:grid;gap:8px}.odl-resource-links a{display:flex;align-items:center;gap:9px;color:#1677e8;font-weight:800;width:max-content;max-width:100%}.odl-folder{width:17px;height:13px;border-radius:2px;background:#1677e8;position:relative;display:inline-block;flex:0 0 auto}.odl-folder:before{content:'';position:absolute;left:1px;top:-4px;width:8px;height:5px;border-radius:2px 2px 0 0;background:#1677e8}.odl-breadcrumb{font-size:13px;color:var(--muted);margin-bottom:16px}.odl-breadcrumb a{color:#1748c9;font-weight:700}.odl-placeholder{padding:32px;border:1px dashed #ccd1d9;border-radius:18px;color:var(--muted);background:#fafafa}.odl-branches.three{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:760px){.odl-branches,.odl-branches.three{grid-template-columns:1fr}.odl-chapter-list{padding-left:22px}.odl-chapter-list:before{left:11px}.odl-num{left:-39px;width:38px;height:38px;font-size:15px}.odl-chapter{padding:18px}.odl-chapter h2{font-size:21px}}
@@ -174,6 +177,49 @@ to{transform:translateX(0)}}
 .odl-top-ad-inner{min-height:110px;width:100%;display:flex;align-items:center;justify-content:center;border-radius:18px}
 @media(max-width:900px){.odl-top-ad-space{margin-top:92px}.odl-top-ad-inner{min-height:90px}}
 
+
+/* ===== ODLXYZ STORIES ===== */
+.odl-stories-section{padding:26px 0 10px;background:var(--bg)}
+.odl-stories{display:flex;align-items:flex-start;gap:20px;overflow-x:auto;padding:8px 4px 18px;scrollbar-width:none}
+.odl-stories::-webkit-scrollbar{display:none}
+.odl-story{flex:0 0 82px;text-align:center;cursor:pointer}
+.odl-story-ring{width:72px;height:72px;margin:auto;padding:3px;border-radius:50%;background:linear-gradient(135deg,#1677e8,#45d6e8);box-sizing:border-box;transition:.2s}
+.odl-story:hover .odl-story-ring{transform:scale(1.06)}
+.odl-story-ring img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid #fff;box-sizing:border-box;background:#eef2f7}
+.odl-story-title{display:block;margin-top:7px;font-size:12px;font-weight:800;color:#1f2937;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.odl-story-viewer{display:none;position:fixed;inset:0;z-index:999999;background:rgba(0,0,0,.94);align-items:center;justify-content:center}
+.odl-story-viewer.active{display:flex}
+.odl-story-image{display:block;max-width:92vw;max-height:86vh;width:auto;height:auto;object-fit:contain;border-radius:14px}
+.odl-story-close,.odl-story-arrow{position:absolute;border:0;color:#fff;background:rgba(255,255,255,.16);cursor:pointer;display:grid;place-items:center}
+.odl-story-close{top:20px;right:24px;width:44px;height:44px;border-radius:50%;font-size:30px}
+.odl-story-arrow{top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;font-size:30px}
+.odl-story-prev{left:20px}.odl-story-next{right:20px}
+.odl-story-counter{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;background:rgba(0,0,0,.45);padding:6px 13px;border-radius:20px;font-size:13px;font-weight:800}
+@media(max-width:700px){.odl-stories{gap:13px}.odl-story{flex-basis:68px}.odl-story-ring{width:60px;height:60px}.odl-story-title{font-size:11px}.odl-story-image{max-width:100vw;max-height:84vh;border-radius:0}.odl-story-arrow{width:40px;height:40px}.odl-story-prev{left:7px}.odl-story-next{right:7px}}
+
+
+/* ODLXYZ Stories : carte gris fonce + cercle rouge */
+.odl-stories-section{width:min(1320px,96%);margin:98px auto 18px;padding:14px 18px 8px;background:#27292e;border:1px solid #3b3e45;border-radius:24px;box-shadow:0 14px 38px rgba(17,19,24,.18)}
+.odl-stories-section .wrap{width:100%}
+.odl-stories{gap:20px;padding:8px 2px 12px}
+.odl-story-ring{width:72px;height:72px;padding:3px;background:#d4001c;box-shadow:0 0 0 2px rgba(212,0,28,.22),0 7px 18px rgba(0,0,0,.25)}
+.odl-story:hover .odl-story-ring{transform:scale(1.07);box-shadow:0 0 0 3px rgba(212,0,28,.30),0 10px 24px rgba(0,0,0,.30)}
+.odl-story-ring img{border:3px solid #27292e}
+.odl-story-title{color:#fff;font-weight:800}
+@media(max-width:900px){.odl-stories-section{margin-top:86px;border-radius:20px;padding:12px 12px 6px}}
+@media(max-width:700px){.odl-stories-section{width:94%;margin-bottom:12px}.odl-story-ring{width:60px;height:60px}}
+
+
+/* Correction tactile mobile : un seul toucher ouvre le lien */
+@media (hover:none) and (pointer:coarse){
+  #mainMenu a{
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:rgba(0,0,0,.06);
+  }
+  #mainMenu a:hover{color:#555;}
+  #mainMenu a:hover:after{transform:scaleX(0);}
+}
+
 ]]></b:skin>
 <style>
 
@@ -213,7 +259,7 @@ to{transform:translateX(0)}}
 <body>
   <header class='header'><div class='wrap nav'>
     <a class='brand' expr:href='data:blog.homepageUrl'><span class='mark'>&#8721;</span><span>Odlxyz</span></a>
-    <button class='mobile' onclick='document.getElementById(&quot;mainMenu&quot;).classList.toggle(&quot;open&quot;)' type='button'>&#9776;</button>
+    <button aria-controls='mainMenu' aria-expanded='false' class='mobile' type='button'>&#9776;</button>
     <nav class='menu' id='mainMenu'>
       <a expr:href='data:blog.homepageUrl'>Accueil</a>
       <a expr:href='data:blog.homepageUrl + &quot;search/label/TCS&quot;'>TCS</a>
@@ -226,6 +272,87 @@ to{transform:translateX(0)}}
       <a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a>
     </nav>
   </div></header>
+
+  <b:if cond='!data:view.isHomepage'>
+    <!-- ===== ODLXYZ STORIES : MODIFIER LES PHOTOS MANUELLEMENT ===== -->
+    <section class='odl-stories-section'>
+      <div class='wrap'>
+        <div class='odl-stories'>
+
+          <!-- STORY 1 : colle tous tes liens dans data-images, séparés par | -->
+          <div class='odl-story' data-images='https://odlxyz.blogspot.com/favicon.ico|PHOTO-1-04|PHOTO-1-05|PHOTO-1-06|PHOTO-1-07|PHOTO-1-08|PHOTO-1-09|PHOTO-1-10|PHOTO-1-11|PHOTO-1-12|PHOTO-1-13|PHOTO-1-14|PHOTO-1-15|PHOTO-1-16|PHOTO-1-17|PHOTO-1-18|PHOTO-1-19|PHOTO-1-20'>
+            <!-- UN SEUL CERCLE. La première vraie photo de data-images devient automatiquement la miniature. -->
+            <div class='odl-story-ring'><img alt='Cours' src='https://placehold.co/160x160?text=Cours'/></div>
+            <span class='odl-story-title'>Odlxyz</span>
+          </div>
+
+          <!-- STORY 2 -->
+          <div class='odl-story' data-images='PHOTO-2-01|PHOTO-2-02|PHOTO-2-03|PHOTO-2-04|PHOTO-2-05|PHOTO-2-06|PHOTO-2-07|PHOTO-2-08|PHOTO-2-09|PHOTO-2-10'>
+            <div class='odl-story-ring'><img alt='Exercices' src='https://placehold.co/160x160?text=Exercices'/></div>
+            <span class='odl-story-title'>TCS-Devoirs</span>
+          </div>
+
+          <!-- STORY 3 -->
+          <div class='odl-story' data-images='PHOTO-3-01|PHOTO-3-02|PHOTO-3-03|PHOTO-3-04|PHOTO-3-05|PHOTO-3-06|PHOTO-3-07|PHOTO-3-08|PHOTO-3-09|PHOTO-3-10'>
+            <div class='odl-story-ring'><img alt='Devoirs' src='https://placehold.co/160x160?text=Devoirs'/></div>
+            <span class='odl-story-title'>1BACSE-Devoirs</span>
+          </div>
+
+          <!-- STORY 4 -->
+          <div class='odl-story' data-images='PHOTO-4-01|PHOTO-4-02|PHOTO-4-03|PHOTO-4-04|PHOTO-4-05|PHOTO-4-06|PHOTO-4-07|PHOTO-4-08|PHOTO-4-09|PHOTO-4-10'>
+            <div class='odl-story-ring'><img alt='Examens' src='https://placehold.co/160x160?text=Examens'/></div>
+            <span class='odl-story-title'>1BACSM-Devoirs</span>
+          </div>
+
+          <!-- STORY 5 -->
+          <div class='odl-story' data-images='PHOTO-5-01|PHOTO-5-02|PHOTO-5-03|PHOTO-5-04|PHOTO-5-05|PHOTO-5-06|PHOTO-5-07|PHOTO-5-08|PHOTO-5-09|PHOTO-5-10'>
+            <div class='odl-story-ring'><img alt='TCS' src='https://placehold.co/160x160?text=TCS'/></div>
+            <span class='odl-story-title'>1BACSH-Devoirs</span>
+          </div>
+          
+                    <!-- STORY 6 -->
+          <div class='odl-story' data-images='PHOTO-6-01|PHOTO-6-02|PHOTO-6-03|PHOTO-6-04|PHOTO-6-05|PHOTO-6-06|PHOTO-6-07|PHOTO-6-08|PHOTO-6-09|PHOTO-6-10'>
+            <div class='odl-story-ring'><img alt='1BAC' src='https://placehold.co/160x160?text=1BAC'/></div>
+            <span class='odl-story-title'>examens regionaux SH</span>
+          </div>
+
+          <!-- STORY 6 -->
+          <div class='odl-story' data-images='PHOTO-6-01|PHOTO-6-02|PHOTO-6-03|PHOTO-6-04|PHOTO-6-05|PHOTO-6-06|PHOTO-6-07|PHOTO-6-08|PHOTO-6-09|PHOTO-6-10'>
+            <div class='odl-story-ring'><img alt='1BAC' src='https://placehold.co/160x160?text=1BAC'/></div>
+            <span class='odl-story-title'>2BACSE-Devoirs</span>
+          </div>
+          <!-- STORY 6 -->
+          <div class='odl-story' data-images='PHOTO-6-01|PHOTO-6-02|PHOTO-6-03|PHOTO-6-04|PHOTO-6-05|PHOTO-6-06|PHOTO-6-07|PHOTO-6-08|PHOTO-6-09|PHOTO-6-10'>
+            <div class='odl-story-ring'><img alt='1BAC' src='https://placehold.co/160x160?text=1BAC'/></div>
+            <span class='odl-story-title'>1BACSMA-Devoirs</span>
+          </div>
+          
+                    <!-- STORY 6 -->
+          <div class='odl-story' data-images='PHOTO-6-01|PHOTO-6-02|PHOTO-6-03|PHOTO-6-04|PHOTO-6-05|PHOTO-6-06|PHOTO-6-07|PHOTO-6-08|PHOTO-6-09|PHOTO-6-10'>
+            <div class='odl-story-ring'><img alt='1BAC' src='https://placehold.co/160x160?text=1BAC'/></div>
+            <span class='odl-story-title'>examens nationaux SMA</span>
+          </div>
+          
+          <!-- STORY 7 -->
+          <div class='odl-story' data-images='PHOTO-7-01|PHOTO-7-02|PHOTO-7-03|PHOTO-7-04|PHOTO-7-05|PHOTO-7-06|PHOTO-7-07|PHOTO-7-08|PHOTO-7-09|PHOTO-7-10'>
+            <div class='odl-story-ring'><img alt='2BAC' src='https://placehold.co/160x160?text=2BAC'/></div>
+            <span class='odl-story-title'>examens nationaux SVT/PC</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Fenêtre plein écran -->
+    <div class='odl-story-viewer' id='odlStoryViewer'>
+      <button aria-label='Fermer' class='odl-story-close' id='odlStoryClose' type='button'>&#215;</button>
+      <button aria-label='Précédent' class='odl-story-arrow odl-story-prev' id='odlStoryPrev' type='button'>&#8249;</button>
+      <img alt='ODLXYZ Story' class='odl-story-image' id='odlStoryImage'/>
+      <button aria-label='Suivant' class='odl-story-arrow odl-story-next' id='odlStoryNext' type='button'>&#8250;</button>
+      <div class='odl-story-counter' id='odlStoryCounter'/>
+    </div>
+  </b:if>
+
 
   <b:if cond='data:view.isHomepage'>
     <section class='hero'>
@@ -241,11 +368,14 @@ to{transform:translateX(0)}}
       <div class='scroll-note'>Scroll</div>
     </section>
 
+
+
+
     <section class='section reveal odl-essential-motion'><div class='wrap odl-essential-front'><div class='section-head'><div><h2>Ressources essentielles</h2><p>Tout ce qu&#39;il faut pour travailler efficacement.</p></div></div><div class='resources'>
-      <a class='resource odl-shopify-card odl-delay-1' expr:href='data:blog.homepageUrl + &quot;search/label/Cours&quot;'><b>01 &#8212; Cours</b><span>Leçons structurées et méthodes.</span></a>
-      <a class='resource odl-shopify-card odl-delay-2' expr:href='data:blog.homepageUrl + &quot;search/label/Exercices%20corrig%C3%A9s&quot;'><b>02 &#8212; Exercices</b><span>Entraînement avec solutions détaillées.</span></a>
-      <a class='resource odl-shopify-card odl-delay-3' expr:href='data:blog.homepageUrl + &quot;search/label/Devoirs&quot;'><b>03 &#8212; Devoirs</b><span>Contrôles et devoirs corrigés.</span></a>
-      <a class='resource odl-shopify-card odl-delay-4' expr:href='data:blog.homepageUrl + &quot;search/label/Examens&quot;'><b>04 &#8212; Examens</b><span>Préparation au baccalauréat.</span></a>
+      <a class='resource odl-shopify-card odl-delay-1' expr:href='data:blog.homepageUrl + &quot;search/label/Cours&quot;'><b> Cours</b><span>Leçons structurées et méthodes.</span></a>
+      <a class='resource odl-shopify-card odl-delay-2' expr:href='data:blog.homepageUrl + &quot;search/label/Exercices%20corrig%C3%A9s&quot;'><b> Exercices</b><span>Entraînement avec solutions détaillées.</span></a>
+      <a class='resource odl-shopify-card odl-delay-3' expr:href='data:blog.homepageUrl + &quot;search/label/Devoirs&quot;'><b> Devoirs</b><span>Contrôles et devoirs corrigés.</span></a>
+      <a class='resource odl-shopify-card odl-delay-4' expr:href='data:blog.homepageUrl + &quot;search/label/Examens&quot;'><b>Examens</b><span>Préparation au baccalauréat.</span></a>
     </div></div></section>
 </b:if>
 
@@ -257,7 +387,7 @@ to{transform:translateX(0)}}
     <main class='mainbox'>
       <div id='odl-posts'><div class='odl-loading'>Chargement des articles&#8230;</div></div>
       <b:section class='main' id='main' maxwidgets='1' showaddelement='no' style='display:none'>
-        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='false'>
+        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='false'>
           <b:widget-settings>
             <b:widget-setting name='showDateHeader'>false</b:widget-setting>
             <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
@@ -969,8 +1099,8 @@ to{transform:translateX(0)}}
     <div><h3 class='footer-brand'>ODLXYZ</h3><p>Soutien Maths &#8211; Bac &amp; Tronc Commun. Cours, exercices corrigés, devoirs et examens pour TCS, 1BAC et 2BAC.</p><div class='socials'><a aria-label='Facebook' class='facebook' href='#' title='Facebook'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.25 10.44 22v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22C18.34 21.25 22 17.08 22 12.06z'/></svg></a><a aria-label='Instagram' class='instagram' href='#' title='Instagram'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z'/></svg></a><a aria-label='Pinterest' class='pinterest' href='#' title='Pinterest'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M12.2 2C6.7 2 4 5.94 4 9.23c0 2.5.95 4.72 2.98 5.55.33.14.63.01.73-.36.07-.25.23-.9.3-1.17.1-.36.06-.49-.2-.8-.59-.7-.96-1.6-.96-2.88 0-3.71 2.78-7.03 7.23-7.03 3.94 0 6.11 2.41 6.11 5.63 0 4.23-1.87 7.8-4.65 7.8-1.54 0-2.69-1.27-2.32-2.83.44-1.86 1.3-3.87 1.3-5.22 0-1.2-.65-2.21-1.98-2.21-1.57 0-2.83 1.62-2.83 3.79 0 1.38.47 2.32.47 2.32l-1.89 8c-.56 2.38-.08 5.3-.04 5.59.03.17.25.21.35.08.15-.2 2.08-2.58 2.74-4.96.19-.67 1.07-4.18 1.07-4.18.53 1.01 2.07 1.9 3.71 1.9 4.88 0 8.19-4.45 8.19-10.4C24.31 5.26 20.41 2 12.2 2z'/></svg></a><a aria-label='YouTube' class='youtube' href='#' title='YouTube'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z'/></svg></a><a aria-label='WhatsApp' class='whatsapp' href='https://wa.me/212688160034' rel='noopener noreferrer' target='_blank' title='WhatsApp'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zM12.2 21.7h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5H7.9c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4l-1.3-.6z'/></svg></a></div></div>
     <div><h3>Niveaux</h3><a expr:href='data:blog.homepageUrl + &quot;search/label/TCS&quot;'>TCS</a><a expr:href='data:blog.homepageUrl + &quot;search/label/1BAC&quot;'>1BAC</a><a expr:href='data:blog.homepageUrl + &quot;search/label/2BAC&quot;'>2BAC</a></div>
     <div><h3>Ressources</h3><a expr:href='data:blog.homepageUrl + &quot;search/label/Cours&quot;'>Cours</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Exercices%20corrig%C3%A9s&quot;'>Exercices corrigés</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Devoirs&quot;'>Devoirs</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Examens&quot;'>Examens</a></div>
-    <div><h3>ODLXYZ</h3><a expr:href='data:blog.homepageUrl + &quot;p/a-propos_01096242198.html&quot;'>À propos</a><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a><a href='mailto:oddllxyz@gmail.com'>oddllxyz@gmail.com</a></div>
-  </div><div class='copy'><span>&#169; <script>document.write(new Date().getFullYear());</script> ODLXYZ &#8226; Soutien Maths &#8211; Bac &amp; Tronc Commun</span><span class='footer-mini'><a expr:href='data:blog.homepageUrl + &quot;p/a-propos_01096242198.html&quot;'>À propos</a><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a></span></div></footer></div>
+    <div><h3>Odlxyz</h3><a expr:href='data:blog.homepageUrl + &quot;p/a-propos_01096242198.html&quot;'>À propos</a><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a><a href='mailto:oddllxyz@gmail.com'>oddllxyz@gmail.com</a></div>
+  </div><div class='copy'><span>&#169; <script>document.write(new Date().getFullYear());</script> Odlxyz &#8226; Soutien Maths &#8211; Bac &amp; Tronc Commun</span><span class='footer-mini'><a expr:href='data:blog.homepageUrl + &quot;p/a-propos_01096242198.html&quot;'>À propos</a><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a></span></div></footer></div>
   <a aria-label='WhatsApp' class='floating-wa' href='https://wa.me/212688160034' rel='noopener noreferrer' target='_blank' title='WhatsApp ODLXYZ'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zM12.2 21.7h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5H7.9c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4l-1.3-.6z'/></svg></a>
 
   <script type='text/javascript'>
@@ -1013,188 +1143,113 @@ to{transform:translateX(0)}}
     };
     var chapters={
       'TCS-Sciences':[
-        {title:'Les ensembles de nombres N, Z, Q, D et R',base:'TCS-Sciences-C01'},
-        {title:'Arithmétique dans IN',base:'TCS-Sciences-C02'},
-        {title:'Calcul vectoriel dans le plan',base:'TCS-Sciences-C03'},
-        {title:'Chapitre 04',base:'TCS-Sciences-C04'},
-        {title:'Chapitre 05',base:'TCS-Sciences-C05'},
-        {title:'Chapitre 06',base:'TCS-Sciences-C06'},
-        {title:'Chapitre 07',base:'TCS-Sciences-C07'},
-        {title:'Chapitre 08',base:'TCS-Sciences-C08'},
-        {title:'Chapitre 09',base:'TCS-Sciences-C09'},
-        {title:'Chapitre 10',base:'TCS-Sciences-C10'},
-        {title:'Chapitre 11',base:'TCS-Sciences-C11'},
-        {title:'Chapitre 12',base:'TCS-Sciences-C12'},
-        {title:'Chapitre 13',base:'TCS-Sciences-C13'},
-        {title:'Chapitre 14',base:'TCS-Sciences-C14'},
-        {title:'Chapitre 15',base:'TCS-Sciences-C15'},
-        {title:'Chapitre 16',base:'TCS-Sciences-C16'},
-        {title:'Chapitre 17',base:'TCS-Sciences-C17'},
-        {title:'Chapitre 18',base:'TCS-Sciences-C18'},
-        {title:'Chapitre 19',base:'TCS-Sciences-C19'},
-        {title:'Chapitre 20',base:'TCS-Sciences-C20'},
-        {title:'Chapitre 21',base:'TCS-Sciences-C21'}
+        {title:"Les ensembles de nombres N, Z, Q, D et R",base:'TCS-Sciences-C01'},
+        {title:"Arithmétique dans IN",base:'TCS-Sciences-C02'},
+        {title:"Calcul vectoriel dans le plan",base:'TCS-Sciences-C03'},
+        {title:"La projection dans le plan",base:'TCS-Sciences-C04'},
+        {title:"L'ordre dans R",base:'TCS-Sciences-C05'},
+        {title:"La droite dans le plan",base:'TCS-Sciences-C06'},
+        {title:"Les polynômes",base:'TCS-Sciences-C07'},
+        {title:"Équations, inéquations et systèmes",base:'TCS-Sciences-C08'},
+        {title:"Trigonométrie 1 (Règles du calcul trigonométrique)",base:'TCS-Sciences-C09'},
+        {title:"Trigonométrie 2 (Équations et inéquations trigonométriques)",base:'TCS-Sciences-C10'},
+        {title:"Généralités sur les fonctions",base:'TCS-Sciences-C11'},
+        {title:"Transformations du plan",base:'TCS-Sciences-C12'},
+        {title:"Le produit scalaire",base:'TCS-Sciences-C13'},
+        {title:"Géométrie dans l'espace",base:'TCS-Sciences-C14'},
+        {title:"Statistiques",base:'TCS-Sciences-C15'},
+
       ],
       'TCS-Lettres':[
-        {title:'Chapitre 01',base:'TCS-Lettres-C01'},
-        {title:'Chapitre 02',base:'TCS-Lettres-C02'},
-        {title:'Chapitre 03',base:'TCS-Lettres-C03'},
-        {title:'Chapitre 04',base:'TCS-Lettres-C04'},
-        {title:'Chapitre 05',base:'TCS-Lettres-C05'},
-        {title:'Chapitre 06',base:'TCS-Lettres-C06'},
-        {title:'Chapitre 07',base:'TCS-Lettres-C07'},
-        {title:'Chapitre 08',base:'TCS-Lettres-C08'},
-        {title:'Chapitre 09',base:'TCS-Lettres-C09'},
-        {title:'Chapitre 10',base:'TCS-Lettres-C10'},
-        {title:'Chapitre 11',base:'TCS-Lettres-C11'},
-        {title:'Chapitre 12',base:'TCS-Lettres-C12'},
-        {title:'Chapitre 13',base:'TCS-Lettres-C13'},
-        {title:'Chapitre 14',base:'TCS-Lettres-C14'},
-        {title:'Chapitre 15',base:'TCS-Lettres-C15'},
-        {title:'Chapitre 16',base:'TCS-Lettres-C16'},
-        {title:'Chapitre 17',base:'TCS-Lettres-C17'},
-        {title:'Chapitre 18',base:'TCS-Lettres-C18'},
-        {title:'Chapitre 19',base:'TCS-Lettres-C19'},
-        {title:'Chapitre 20',base:'TCS-Lettres-C20'},
-        {title:'Chapitre 21',base:'TCS-Lettres-C21'}
+        {title:"Opérartions dans R et propriétés",base:'TCS-Lettres-C01'},
+        {title:"Equations Inéquations et Systèmes",base:'TCS-Lettres-C02'},
+        {title:"Ordre dans l'ensemble R",base:'TCS-Lettres-C03'},
+        {title:"Statistique",base:'TCS-Lettres-C04'},
+        {title:"Les fonctions numériques",base:'TCS-Lettres-C05'},
+        {title:"Le repère et la droite dans le plan",base:'TCS-Lettres-C06'},
+
       ],
       '1BAC-Sciences':[
-        {title:'Chapitre 01',base:'1BAC-Sciences-C01'},
-        {title:'Chapitre 02',base:'1BAC-Sciences-C02'},
-        {title:'Chapitre 03',base:'1BAC-Sciences-C03'},
-        {title:'Chapitre 04',base:'1BAC-Sciences-C04'},
-        {title:'Chapitre 05',base:'1BAC-Sciences-C05'},
-        {title:'Chapitre 06',base:'1BAC-Sciences-C06'},
-        {title:'Chapitre 07',base:'1BAC-Sciences-C07'},
-        {title:'Chapitre 08',base:'1BAC-Sciences-C08'},
-        {title:'Chapitre 09',base:'1BAC-Sciences-C09'},
-        {title:'Chapitre 10',base:'1BAC-Sciences-C10'},
-        {title:'Chapitre 11',base:'1BAC-Sciences-C11'},
-        {title:'Chapitre 12',base:'1BAC-Sciences-C12'},
-        {title:'Chapitre 13',base:'1BAC-Sciences-C13'},
-        {title:'Chapitre 14',base:'1BAC-Sciences-C14'},
-        {title:'Chapitre 15',base:'1BAC-Sciences-C15'},
-        {title:'Chapitre 16',base:'1BAC-Sciences-C16'},
-        {title:'Chapitre 17',base:'1BAC-Sciences-C17'},
-        {title:'Chapitre 18',base:'1BAC-Sciences-C18'},
-        {title:'Chapitre 19',base:'1BAC-Sciences-C19'},
-        {title:'Chapitre 20',base:'1BAC-Sciences-C20'},
-        {title:'Chapitre 21',base:'1BAC-Sciences-C21'}
+        {title:"Logique mathématique",base:'1BAC-Sciences-C01'},
+        {title:"Généralités sur les fonctions",base:'1BAC-Sciences-C02'},
+        {title:"Le barycentre dans le plan",base:'1BAC-Sciences-C03'},
+        {title:"Le produit scalaire et ses applications",base:'1BAC-Sciences-C04'},
+        {title:"Les suites numériques",base:'1BAC-Sciences-C05'},
+        {title:"Calcul trigonométrique",base:'1BAC-Sciences-C06'},
+        {title:"La rotation dans le plan",base:'1BAC-Sciences-C07'},
+        {title:"Les limites d’une fonction",base:'1BAC-Sciences-C08'},
+        {title:"La dérivation",base:'1BAC-Sciences-C09'},
+        {title:"Étude des fonctions numériques",base:'1BAC-Sciences-C10'},
+        {title:"Géométrie dans l’espace",base:'1BAC-Sciences-C11'},
+
       ],
       '1BAC-SMA':[
-        {title:'Chapitre 01',base:'1BAC-SMA-C01'},
-        {title:'Chapitre 02',base:'1BAC-SMA-C02'},
-        {title:'Chapitre 03',base:'1BAC-SMA-C03'},
-        {title:'Chapitre 04',base:'1BAC-SMA-C04'},
-        {title:'Chapitre 05',base:'1BAC-SMA-C05'},
-        {title:'Chapitre 06',base:'1BAC-SMA-C06'},
-        {title:'Chapitre 07',base:'1BAC-SMA-C07'},
-        {title:'Chapitre 08',base:'1BAC-SMA-C08'},
-        {title:'Chapitre 09',base:'1BAC-SMA-C09'},
-        {title:'Chapitre 10',base:'1BAC-SMA-C10'},
-        {title:'Chapitre 11',base:'1BAC-SMA-C11'},
-        {title:'Chapitre 12',base:'1BAC-SMA-C12'},
-        {title:'Chapitre 13',base:'1BAC-SMA-C13'},
-        {title:'Chapitre 14',base:'1BAC-SMA-C14'},
-        {title:'Chapitre 15',base:'1BAC-SMA-C15'},
-        {title:'Chapitre 16',base:'1BAC-SMA-C16'},
-        {title:'Chapitre 17',base:'1BAC-SMA-C17'},
-        {title:'Chapitre 18',base:'1BAC-SMA-C18'},
-        {title:'Chapitre 19',base:'1BAC-SMA-C19'},
-        {title:'Chapitre 20',base:'1BAC-SMA-C20'},
-        {title:'Chapitre 21',base:'1BAC-SMA-C21'}
+        {title:"Logique mathématique",base:'1BAC-SMA-C01'},
+        {title:"Ensembles et applications",base:'1BAC-SMA-C02'},
+        {title:"Généralités sur les fonctions",base:'1BAC-SMA-C03'},
+        {title:"Le barycentre dans le plan",base:'1BAC-SMA-C04'},
+        {title:"Le produit scalaire dans le plan",base:'1BAC-SMA-C05'},
+        {title:"Calcul trigonométrique",base:'1BAC-SMA-C06'},
+        {title:"Les suites numériques",base:'1BAC-SMA-C07'},
+        {title:"Limites d’une fonction",base:'1BAC-SMA-C08'},
+        {title:"La rotation dans le plan",base:'1BAC-SMA-C09'},
+        {title:"La dérivation",base:'1BAC-SMA-C10'},
+        {title:"Étude des fonctions",base:'1BAC-SMA-C11'},
+        {title:"Vecteurs de l’espace",base:'1BAC-SMA-C12'},
+        {title:"Géométrie dans l'espace",base:'1BAC-SMA-C13'},
+        {title:"Dénombrement",base:'1BAC-SMA-C14'},
+        {title:"Le produit scalaire dans l'espace",base:'1BAC-SMA-C15'},
+        {title:"Arithmétique dans Z",base:'1BAC-SMA-C16'},
+
       ],
       '1BAC-Lettres':[
-        {title:'Chapitre 01',base:'1BAC-Lettres-C01'},
-        {title:'Chapitre 02',base:'1BAC-Lettres-C02'},
-        {title:'Chapitre 03',base:'1BAC-Lettres-C03'},
-        {title:'Chapitre 04',base:'1BAC-Lettres-C04'},
-        {title:'Chapitre 05',base:'1BAC-Lettres-C05'},
-        {title:'Chapitre 06',base:'1BAC-Lettres-C06'},
-        {title:'Chapitre 07',base:'1BAC-Lettres-C07'},
-        {title:'Chapitre 08',base:'1BAC-Lettres-C08'},
-        {title:'Chapitre 09',base:'1BAC-Lettres-C09'},
-        {title:'Chapitre 10',base:'1BAC-Lettres-C10'},
-        {title:'Chapitre 11',base:'1BAC-Lettres-C11'},
-        {title:'Chapitre 12',base:'1BAC-Lettres-C12'},
-        {title:'Chapitre 13',base:'1BAC-Lettres-C13'},
-        {title:'Chapitre 14',base:'1BAC-Lettres-C14'},
-        {title:'Chapitre 15',base:'1BAC-Lettres-C15'},
-        {title:'Chapitre 16',base:'1BAC-Lettres-C16'},
-        {title:'Chapitre 17',base:'1BAC-Lettres-C17'},
-        {title:'Chapitre 18',base:'1BAC-Lettres-C18'},
-        {title:'Chapitre 19',base:'1BAC-Lettres-C19'},
-        {title:'Chapitre 20',base:'1BAC-Lettres-C20'},
-        {title:'Chapitre 21',base:'1BAC-Lettres-C21'}
+        {title:"Notions de logique",base:'1BAC-Lettres-C01'},
+        {title:"Calcul numérique",base:'1BAC-Lettres-C02'},
+        {title:"Généralités sur les fonctions",base:'1BAC-Lettres-C03'},
+        {title:"Les suites numériques",base:'1BAC-Lettres-C04'},
+        {title:"Dénombrement",base:'1BAC-Lettres-C05'},
+        {title:"limite d'une fonction numérique",base:'1BAC-Lettres-C06'},
+        {title:"Dérivabilité",base:'1BAC-Lettres-C07'},
+        {title:"Etude d'une fonction numérique",base:'1BAC-Lettres-C08'},
+
       ],
       '2BAC-PC-SVT':[
-        {title:'Chapitre 01',base:'2BAC-PC-SVT-C01'},
-        {title:'Chapitre 02',base:'2BAC-PC-SVT-C02'},
-        {title:'Chapitre 03',base:'2BAC-PC-SVT-C03'},
-        {title:'Chapitre 04',base:'2BAC-PC-SVT-C04'},
-        {title:'Chapitre 05',base:'2BAC-PC-SVT-C05'},
-        {title:'Chapitre 06',base:'2BAC-PC-SVT-C06'},
-        {title:'Chapitre 07',base:'2BAC-PC-SVT-C07'},
-        {title:'Chapitre 08',base:'2BAC-PC-SVT-C08'},
-        {title:'Chapitre 09',base:'2BAC-PC-SVT-C09'},
-        {title:'Chapitre 10',base:'2BAC-PC-SVT-C10'},
-        {title:'Chapitre 11',base:'2BAC-PC-SVT-C11'},
-        {title:'Chapitre 12',base:'2BAC-PC-SVT-C12'},
-        {title:'Chapitre 13',base:'2BAC-PC-SVT-C13'},
-        {title:'Chapitre 14',base:'2BAC-PC-SVT-C14'},
-        {title:'Chapitre 15',base:'2BAC-PC-SVT-C15'},
-        {title:'Chapitre 16',base:'2BAC-PC-SVT-C16'},
-        {title:'Chapitre 17',base:'2BAC-PC-SVT-C17'},
-        {title:'Chapitre 18',base:'2BAC-PC-SVT-C18'},
-        {title:'Chapitre 19',base:'2BAC-PC-SVT-C19'},
-        {title:'Chapitre 20',base:'2BAC-PC-SVT-C20'},
-        {title:'Chapitre 21',base:'2BAC-PC-SVT-C21'}
+        {title:"Limites et Continuité",base:'2BAC-PC-SVT-C01'},
+        {title:"Dérivation et étude de fonctions",base:'2BAC-PC-SVT-C02'},
+        {title:"Les suites numériques",base:'2BAC-PC-SVT-C03'},
+        {title:"Fonctions primitives",base:'2BAC-PC-SVT-C04'},
+        {title:"Fonctions logarithmes et fonctions exponentielles",base:'2BAC-PC-SVT-C05'},
+        {title:"Les nombres complexes",base:'2BAC-PC-SVT-C06'},
+        {title:"Equations différentielles",base:'2BAC-PC-SVT-C07'},
+        {title:"Calcul intégral",base:'2BAC-PC-SVT-C08'},
+        {title:"Produit scalaire dans l'espace",base:'2BAC-PC-SVT-C09'},
+        {title:"Produit vectoriel",base:'2BAC-PC-SVT-C10'},
+        {title:"Dénombrement",base:'2BAC-PC-SVT-C11'},
+        {title:"Calcul de probabilités",base:'2BAC-PC-SVT-C12'},
+       
       ],
       '2BAC-SMA':[
-        {title:'Chapitre 01',base:'2BAC-SMA-C01'},
-        {title:'Chapitre 02',base:'2BAC-SMA-C02'},
-        {title:'Chapitre 03',base:'2BAC-SMA-C03'},
-        {title:'Chapitre 04',base:'2BAC-SMA-C04'},
-        {title:'Chapitre 05',base:'2BAC-SMA-C05'},
-        {title:'Chapitre 06',base:'2BAC-SMA-C06'},
-        {title:'Chapitre 07',base:'2BAC-SMA-C07'},
-        {title:'Chapitre 08',base:'2BAC-SMA-C08'},
-        {title:'Chapitre 09',base:'2BAC-SMA-C09'},
-        {title:'Chapitre 10',base:'2BAC-SMA-C10'},
-        {title:'Chapitre 11',base:'2BAC-SMA-C11'},
-        {title:'Chapitre 12',base:'2BAC-SMA-C12'},
-        {title:'Chapitre 13',base:'2BAC-SMA-C13'},
-        {title:'Chapitre 14',base:'2BAC-SMA-C14'},
-        {title:'Chapitre 15',base:'2BAC-SMA-C15'},
-        {title:'Chapitre 16',base:'2BAC-SMA-C16'},
-        {title:'Chapitre 17',base:'2BAC-SMA-C17'},
-        {title:'Chapitre 18',base:'2BAC-SMA-C18'},
-        {title:'Chapitre 19',base:'2BAC-SMA-C19'},
-        {title:'Chapitre 20',base:'2BAC-SMA-C20'},
-        {title:'Chapitre 21',base:'2BAC-SMA-C21'}
+        {title:"Limites et continuité",base:'2BAC-SMA-C01'},
+        {title:"Les suites numériques",base:'2BAC-SMA-C02'},
+        {title:"Dérivation et étude de fonctions",base:'2BAC-SMA-C03'},
+        {title:"Théorème de Rolle et TAF",base:'2BAC-SMA-C04'},
+        {title:"Fonctions primitives",base:'2BAC-SMA-C05'},
+        {title:"Fonctions logarithmes et fonctions exponentielles",base:'2BAC-SMA-C06'},
+        {title:"Equations différentielles",base:'2BAC-SMA-C07'},
+        {title:"Les nombres complexes",base:'2BAC-SMA-C08'},
+        {title:"Calcul intégral",base:'2BAC-SMA-C09'},
+        {title:"Arithmétique",base:'2BAC-SMA-C10'},
+        {title:"Les structures algébriques",base:'2BAC-SMA-C11'},
+        {title:"Calcul de probabilités",base:'2BAC-SMA-C12'},
+
       ],
       '2BAC-Lettres':[
-        {title:'Chapitre 01',base:'2BAC-Lettres-C01'},
-        {title:'Chapitre 02',base:'2BAC-Lettres-C02'},
-        {title:'Chapitre 03',base:'2BAC-Lettres-C03'},
-        {title:'Chapitre 04',base:'2BAC-Lettres-C04'},
-        {title:'Chapitre 05',base:'2BAC-Lettres-C05'},
-        {title:'Chapitre 06',base:'2BAC-Lettres-C06'},
-        {title:'Chapitre 07',base:'2BAC-Lettres-C07'},
-        {title:'Chapitre 08',base:'2BAC-Lettres-C08'},
-        {title:'Chapitre 09',base:'2BAC-Lettres-C09'},
-        {title:'Chapitre 10',base:'2BAC-Lettres-C10'},
-        {title:'Chapitre 11',base:'2BAC-Lettres-C11'},
-        {title:'Chapitre 12',base:'2BAC-Lettres-C12'},
-        {title:'Chapitre 13',base:'2BAC-Lettres-C13'},
-        {title:'Chapitre 14',base:'2BAC-Lettres-C14'},
-        {title:'Chapitre 15',base:'2BAC-Lettres-C15'},
-        {title:'Chapitre 16',base:'2BAC-Lettres-C16'},
-        {title:'Chapitre 17',base:'2BAC-Lettres-C17'},
-        {title:'Chapitre 18',base:'2BAC-Lettres-C18'},
-        {title:'Chapitre 19',base:'2BAC-Lettres-C19'},
-        {title:'Chapitre 20',base:'2BAC-Lettres-C20'},
-        {title:'Chapitre 21',base:'2BAC-Lettres-C21'}
+        {title:"Les suites numériques",base:'2BAC-Lettres-C01'},
+        {title:"Calcul de probabilités",base:'2BAC-Lettres-C02'},
+        {title:"Dérivation et fonctions primitives",base:'2BAC-Lettres-C03'},
+        {title:"Les fonctions logarithmes",base:'2BAC-Lettres-C04'},
+        {title:"La fonction exponentielle népérien",base:'2BAC-Lettres-C05'},
+
       ]
     };
     function renderBranches(level){
@@ -1359,18 +1414,39 @@ to{transform:translateX(0)}}
     if(branches[label]){renderBranches(label);return;}
     if(Object.prototype.hasOwnProperty.call(chapters,label)){renderChapters(label);return;}
 
+    function odlReadableFeedTitle(currentLabel){
+      var suffixes=[
+        {suffix:'-Cours',prefix:'Cours '},
+        {suffix:'-Exercices',prefix:'Exercices '}
+      ];
+      for(var s=0;s<suffixes.length;s++){
+        var item=suffixes[s];
+        if(currentLabel.slice(-item.suffix.length)===item.suffix){
+          var chapterBase=currentLabel.slice(0,-item.suffix.length);
+          for(var branchKey in chapters){
+            if(!Object.prototype.hasOwnProperty.call(chapters,branchKey))continue;
+            var chapterList=chapters[branchKey]||[];
+            for(var c=0;c<chapterList.length;c++){
+              if(chapterList[c].base===chapterBase){
+                return item.prefix+chapterList[c].title;
+              }
+            }
+          }
+        }
+      }
+      return (currentLabel||'Articles récents').replace(/-/g,' ');
+    }
+
     window.odlxyzFeed=function(data){
       var entries=(data&&data.feed&&data.feed.entry)||[];
-      var heading=label||'Articles récents';
-      var html='<h1 class="odl-feed-title">'+esc(heading.replace(/-/g,' '))+'</h1>';
-      if(!entries.length){box.innerHTML=html+'<div class="odl-empty">Aucun article trouvé dans cette catégorie.</div>';return;}
-      entries.forEach(function(e){
+      var heading=odlReadableFeedTitle(label);
+      var html='<h1 class="odl-feed-title">'+esc(heading)+'</h1><div class="odl-article-choice-grid">';
+      if(!entries.length){box.innerHTML='<h1 class="odl-feed-title">'+esc(heading)+'</h1><div class="odl-empty">Aucun article trouvé dans cette catégorie.</div>';return;}
+      entries.forEach(function(e,idx){
         var title=e.title&&e.title.$t||'Article'; var link='#'; (e.link||[]).forEach(function(l){if(l.rel==='alternate')link=l.href;});
-        var body=(e.content&&e.content.$t)||(e.summary&&e.summary.$t)||''; var sn=strip(body); if(sn.length>260) sn=sn.slice(0,260)+'…';
-        var date=e.published&&e.published.$t?new Date(e.published.$t).toLocaleDateString('fr-FR',{year:'numeric',month:'long',day:'numeric'}):'';
-        var thumb=e.media$thumbnail&&e.media$thumbnail.url?e.media$thumbnail.url.replace(/s72-c/,'s1200'):'';
-        html+='<article class="odl-post-card">'+(thumb?'<img class="odl-thumb" src="'+thumb+'" alt="" loading="lazy"/>':'')+'<h2><a href="'+link+'">'+esc(title)+'</a></h2><div class="odl-meta">'+esc(date)+'</div><div class="odl-snippet">'+esc(sn)+'</div><a class="odl-read" href="'+link+'">Lire l’article →</a></article>';
-      }); box.innerHTML=html;
+        var choiceName=idx+1;
+        html+='<article class="odl-article-choice"><div class="odl-article-choice-label">Choix '+choiceName+'</div><a class="odl-article-choice-card" href="'+link+'"><h2>'+esc(title)+'</h2></a></article>';
+      }); box.innerHTML=html+'</div>';
     };
     // PDF: first click starts a 10-second countdown; second click opens the PDF.
     document.addEventListener('click',function(ev){
@@ -1395,6 +1471,50 @@ to{transform:translateX(0)}}
         btn.innerHTML='<span class="odl-pdf-icon">✓</span> Télécharger le cours en PDF';
       },1000);
     });
+
+
+    // Menu mobile ODLXYZ : ouverture et navigation dès le premier clic.
+    (function(){
+      var menu=document.getElementById('mainMenu');
+      var mobileBtn=document.querySelector('.mobile');
+      if(!menu||!mobileBtn)return;
+
+      mobileBtn.addEventListener('click',function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var opened=menu.classList.toggle('open');
+        mobileBtn.setAttribute('aria-expanded',opened?'true':'false');
+      });
+
+      // Ne pas bloquer le clic des liens : le navigateur ouvre directement la page.
+      // Téléphone : le premier toucher ouvre immédiatement la destination.
+      menu.addEventListener('touchend',function(ev){
+        var link=ev.target.closest?ev.target.closest('a'):null;
+        if(!link)return;
+        var href=link.getAttribute('href');
+        if(!href || href==='#')return;
+        ev.preventDefault();
+        ev.stopPropagation();
+        menu.classList.remove('open');
+        mobileBtn.setAttribute('aria-expanded','false');
+        window.location.href=link.href;
+      },{passive:false});
+
+      // Ordinateur / clic classique.
+      menu.addEventListener('click',function(ev){
+        var link=ev.target.closest('a');
+        if(!link)return;
+        menu.classList.remove('open');
+        mobileBtn.setAttribute('aria-expanded','false');
+      });
+
+      document.addEventListener('click',function(ev){
+        if(menu.classList.contains('open')&&!menu.contains(ev.target)&&!mobileBtn.contains(ev.target)){
+          menu.classList.remove('open');
+          mobileBtn.setAttribute('aria-expanded','false');
+        }
+      });
+    })();
 
     // Pages À propos et Contact : design ODLXYZ intégré au thème.
     var pageMatch=path.match(/\/p\/[^/]+\.html$/i);
@@ -1551,6 +1671,78 @@ to{transform:translateX(0)}}
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initLevelCards);
   else initLevelCards();
+})();
+//]]>
+</script>
+
+
+<script type='text/javascript'>
+//<![CDATA[
+(function(){
+  function initOdlStories(){
+    var stories=document.querySelectorAll('.odl-story');
+    var viewer=document.getElementById('odlStoryViewer');
+    var image=document.getElementById('odlStoryImage');
+    var close=document.getElementById('odlStoryClose');
+    var prev=document.getElementById('odlStoryPrev');
+    var next=document.getElementById('odlStoryNext');
+    var counter=document.getElementById('odlStoryCounter');
+    if(!stories.length||!viewer||!image) return;
+
+    var images=[],current=0;
+
+    function show(){
+      if(!images.length) return;
+      image.src=images[current];
+      counter.textContent=(current+1)+' / '+images.length;
+    }
+    function openStory(story){
+      var data=story.getAttribute('data-images')||'';
+      var parts=data.split('|').map(function(x){return x.trim();});
+      images=[];
+      parts.forEach(function(x){
+        if(x==='USE-THUMB'){
+          var thumb=story.querySelector('.odl-story-ring img');
+          if(thumb && thumb.src) images.push(thumb.src);
+        }else if(x && x.indexOf('PHOTO-')!==0){
+          images.push(x);
+        }
+      });
+      if(!images.length){
+        alert('Ajoute les liens des photos dans data-images de cette Story.');
+        return;
+      }
+      current=0;viewer.classList.add('active');document.body.style.overflow='hidden';show();
+    }
+    function closeStory(){viewer.classList.remove('active');document.body.style.overflow='';image.removeAttribute('src');}
+    function nextImage(){if(!images.length)return;current=(current+1)%images.length;show();}
+    function prevImage(){if(!images.length)return;current=(current-1+images.length)%images.length;show();}
+
+    Array.prototype.forEach.call(stories,function(story){
+      // La première URL réelle devient automatiquement la photo du cercle.
+      var data=story.getAttribute('data-images')||'';
+      var first=data.split('|').map(function(x){return x.trim();}).filter(function(x){
+        return x && x!=='USE-THUMB' && x.indexOf('PHOTO-')!==0;
+      })[0];
+      var thumb=story.querySelector('.odl-story-ring img');
+      if(first && thumb) thumb.src=first;
+
+      // Toutes les photos de data-images s'ouvrent DANS CE MÊME CERCLE.
+      story.addEventListener('click',function(){openStory(story);});
+    });
+    close.addEventListener('click',closeStory);
+    next.addEventListener('click',nextImage);
+    prev.addEventListener('click',prevImage);
+    viewer.addEventListener('click',function(e){if(e.target===viewer)closeStory();});
+    document.addEventListener('keydown',function(e){
+      if(!viewer.classList.contains('active'))return;
+      if(e.key==='Escape')closeStory();
+      if(e.key==='ArrowRight')nextImage();
+      if(e.key==='ArrowLeft')prevImage();
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initOdlStories);
+  else initOdlStories();
 })();
 //]]>
 </script>
